@@ -1,0 +1,26 @@
+.dropdown-wrapper {
+    width: 320px;
+}
+
+.department {
+    border: 1px solid #BDBDBD;
+    border-radius: 30px;
+    height: 42px;
+    font-size: 14px;
+    color: #7c7c7c;  
+    display: flex;
+    align-items: center;
+    padding: 0px 17px 0px 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.department-list-wrapper {
+    width: 320px;
+    position: absolute;
+}
+
+.department-list {
+    border: 1px solid #000000; 
+
+}
