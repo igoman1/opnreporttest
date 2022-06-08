@@ -17,16 +17,6 @@ body {
   padding: 0;
 }
 
-header {
-  padding: 30px;
-  background-color: gray;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  position: fixed;
-  width: 100%;
-}
-
 p {
   font-size: 30px;
   margin-top: 90px;

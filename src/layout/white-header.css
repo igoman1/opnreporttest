@@ -1,5 +1,4 @@
 .white-header {
-    border: 1px solid black;
     height: 50px;
     /* position: fixed; */
     /* top: 0px; */
@@ -7,14 +6,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .chevron-left {
     width: 8px;
     height: 14px;
     margin-right: 7px;
-    
 }
 
 .previous-page-text{
@@ -38,7 +35,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
-    margin-right: 20px;
 
     color: #FFFFFF;
 }
