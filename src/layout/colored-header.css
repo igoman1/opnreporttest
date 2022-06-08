@@ -1,0 +1,24 @@
+.colored-header-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-colored {
+    height: 27px;
+    margin: 15px;
+}
+
+.colored-header-description{
+    color: #3955B4;
+    /* position: absolute;
+    width: 112px;
+    height: 22px;
+    left: 126px;
+    top: 20px; */
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+}

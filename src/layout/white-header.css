@@ -1,10 +1,44 @@
 .white-header {
     border: 1px solid black;
     height: 50px;
-    position: fixed;
-    top: 0px;
-    /* width: 100% */
-    left: 0px;
-    right: 0;
+    /* position: fixed; */
+    /* top: 0px; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+.chevron-left {
+    width: 8px;
+    height: 14px;
+    margin-right: 7px;
+    
+}
+
+.previous-page-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #FFFFFF;
+}
+
+.logo-white {
+    width: 70px;
+    height: 21px;
+}
+
+.header-description{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    margin-right: 20px;
+
+    color: #FFFFFF;
 }

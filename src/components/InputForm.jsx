@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './InputForm.css';
+import './input-form.css';
 import Chevron from '../asset/Chevron.svg';
 
 const InputForm = () => {
@@ -9,23 +9,28 @@ const InputForm = () => {
     }
     return (
         <form>
-            <div className='dropdown-wrapper'>
-                <div className='department' onClick={dropdownClickHandler}>
-                    <span>진료과목 검색</span>
-                <img src={Chevron}/>
+            <div className='question-wrapper'>
+                <div className='question'>
+                    진료과목을 알려주세요
                 </div>
-            </div>
-                {isClicked ? 
-                    <div className='department-list-wrapper'>
-                        <ul className='department-list'>
-                            <li>가정의학과</li>
-                            <li>내과</li>
-                            <li>소아청소년과</li>
-                            <li>이비인후과</li>
-                            <li>마취통증의학과</li>
-                        </ul>
+                <div className='dropdown-wrapper'>
+                    <div className='department' onClick={dropdownClickHandler}>
+                        <span>진료과목 검색</span>
+                    <img src={Chevron}/>
                     </div>
-                : null }
+                </div>
+                    {isClicked ? 
+                        <div className='department-list-wrapper'>
+                            <ul className='department-list'>
+                                <li>가정의학과</li>
+                                <li>내과</li>
+                                <li>소아청소년과</li>
+                                <li>이비인후과</li>
+                                <li>마취통증의학과</li>
+                            </ul>
+                        </div>
+                    : null }
+            </div>
         </form>
     );
 };

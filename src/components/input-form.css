@@ -1,12 +1,29 @@
+.question-wrapper {
+    margin: 15px 20px 15px 20px;
+}
+
+.question {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+}
+
 .dropdown-wrapper {
     width: 320px;
+    margin-top: 10px;
 }
 
 .department {
     border: 1px solid #BDBDBD;
     border-radius: 30px;
     height: 42px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 140%;
     color: #7c7c7c;  
     display: flex;
     align-items: center;
