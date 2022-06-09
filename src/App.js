@@ -1,6 +1,4 @@
 import './App.css';
-import Header from './layout/WhiteHeader';
-import Menu from './layout/Menu';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Result from './pages/Result';

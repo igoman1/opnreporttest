@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from "react";
 import './result.css';
 import WhiteHeader from './../layout/WhiteHeader';
+import Menu from './../layout/Menu';
+import TableofContents from "../layout/TableofContents";
+import styled from "styled-components";
+import bgImageOne from "../asset/Background-image-1.png";
 
 const Result = () => {
 
@@ -25,11 +29,11 @@ const Result = () => {
     return (
         <>
         <div className="App">
-            <header className={cls}><WhiteHeader /></header>
+            <header className={cls}><WhiteHeader /><Menu /></header>
         </div>
-        <WhiteHeader />
         <div className='result-layout'>
-            결과입니다
+            <TableofContents />
+            <img src={bgImageOne} />
         </div>
         </>
     );

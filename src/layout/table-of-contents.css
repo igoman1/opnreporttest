@@ -1,12 +1,14 @@
-.menu {
-    display: flex;
-    justify-content: space-evenly;
+.table-of-contents{
+    /* MD */
+
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
+    /* identical to box height, or 20px */
+
 
     color: #FFFFFF;
-    margin-bottom: 10px;
+
 }
