@@ -1,48 +1,86 @@
 import "./input-form.css";
-
 import React, { useState } from "react";
+import Dropdown from "./Dropdown";
+import BottomButton from "./../components/BottomButton";
+import { useNavigate } from "react-router-dom";
+import Loader from "./Lodaer";
 
-import Chevron from "../asset/Chevron.svg";
-import DropdownSample1 from "./DropdownSample1";
-import DropdownSample2 from "./DropdownSample2";
+const InputForm = (props) => {
+  const navigate = useNavigate();
+  const [department, setDepartment] = useState("");
+  const [location, setLocation] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-const InputForm = () => {
-    const [isClicked, setisClicked] = useState(false);
-    const dropdownClickHandler = () => {
-        setisClicked(true);
-    };
+  const departmentOptions = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
+  const locationOptions = [
+    { value: "경기도 고양시 마두동", label: "경기도 고양시 마두동" },
+    { value: "수원시 팔달구 우만동", label: "수원시 팔달구 우만동" },
+    { value: "서울시 관악구 신림동", label: "서울시 관악구 신림동" },
+  ];
 
-    return (
-        <form>
-            <div className="question-wrapper">
-                <div className="question">진료과목을 알려주세요</div>
-                <div style={{ marginTop: "50px" }}>직접 만든거</div>
+  let isValid = department !== "" && location !== "";
 
-                <div className="dropdown-wrapper">
-                    <div className="department" onClick={dropdownClickHandler}>
-                        <span>진료과목 검색</span>
-                        <img src={Chevron} />
-                    </div>
-                </div>
-                {isClicked ? (
-                    <div className="department-list-wrapper">
-                        <ul className="department-list">
-                            <li>가정의학과</li>
-                            <li>내과</li>
-                            <li>소아청소년과</li>
-                            <li>이비인후과</li>
-                            <li>마취통증의학과</li>
-                        </ul>
-                    </div>
-                ) : null}
-                {/* <div style={{ marginTop: "50px" }}>라이브러리</div>
-                <DropdownSample2 /> */}
+  const departmentSelectHandler = (selectedValue) => {
+    setDepartment(selectedValue.value);
+  };
 
-                {/* <div style={{ marginTop: "50px" }}>커스텀 한거</div> */}
-                <DropdownSample1 />
-            </div>
-        </form>
-    );
+  const locationSelectHandler = (selectedValue) => {
+    setLocation(selectedValue.value);
+  };
+
+  const submitHandler = async () => {
+    if (department === "" || location === "") {
+      return;
+    }
+    console.log(department, location);
+
+    let httpRequestIsOK = false;
+    setIsLoading(true);
+    setTimeout(() => {
+      try {
+        if (!httpRequestIsOK) {
+          throw new Error("분석에 실패했습니다.");
+        }
+        navigate("/report");
+      } catch (error) {
+        alert(error.message);
+      } finally {
+        setIsLoading(false);
+      }
+    }, 1000);
+  };
+
+  return (
+    <div>
+      {isLoading ? (
+        <Loader type="spin" color="RGB 값" message="분석중입니다." />
+      ) : (
+        <>
+          <div className="question-wrapper">
+            <Dropdown
+              title="진료과목을 알려주세요"
+              options={departmentOptions}
+              onSelect={departmentSelectHandler}
+            />
+            <Dropdown
+              title="관심있는 지역을 알려주세요"
+              options={locationOptions}
+              onSelect={locationSelectHandler}
+            />
+          </div>
+
+          <BottomButton
+            isValid={isValid}
+            onSubmit={submitHandler}
+          ></BottomButton>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default InputForm;

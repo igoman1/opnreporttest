@@ -1,27 +1,15 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import InputForm from '../components/InputForm';
-import ColoredHeader from '../layout/ColoredHeader';
-import './home.css';
-import BottomButton from './../components/BottomButton';
+import React from "react";
+import InputForm from "../components/InputForm";
+import ColoredHeader from "../layout/ColoredHeader";
+import "./home.css";
 
 const Home = () => {
-    
-    return (
-        <>
-
-        <ColoredHeader />
-        <InputForm></InputForm>
-
-
-<Link to="/report">
-    <BottomButton></BottomButton>
-
-</Link>
-     
-        </>
-    );
+  return (
+    <>
+      <ColoredHeader />
+      <InputForm></InputForm>
+    </>
+  );
 };
-
 
 export default Home;

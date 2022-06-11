@@ -1,54 +1,46 @@
 .question-wrapper {
-    margin: 15px 20px 15px 20px;
+  margin: 15px 20px 15px 20px;
 }
 
 .question {
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 140%;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
 }
 
 .dropdown-wrapper {
-    width: 320px;
-    margin-top: 10px;
+  width: 320px;
+  margin-top: 10px;
 }
 
 .department {
-    border: 1px solid #bdbdbd;
-    border-radius: 30px;
-    height: 42px;
-    font-family: "Noto Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #7c7c7c;
-    display: flex;
-    align-items: center;
-    padding: 0px 17px 0px 20px;
-    justify-content: space-between;
-    position: relative;
+  border: 1px solid #bdbdbd;
+  border-radius: 30px;
+  height: 42px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #7c7c7c;
+  display: flex;
+  align-items: center;
+  padding: 0px 17px 0px 20px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .department-list-wrapper {
-    width: 320px;
-    position: absolute;
+  width: 320px;
+  position: absolute;
 }
 
 .department-list {
-    border: 1px solid #000000;
+  border: 1px solid #000000;
 }
 
 .css-1okebmr-indicatorSeparator {
-    display: none;
-}
-
-.test {
-    padding: 0 !important;
-}
-
-.test2 {
-    padding: 0 !important;
+  display: none;
 }
