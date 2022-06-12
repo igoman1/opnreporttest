@@ -7,7 +7,12 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 140%;
+  /* line-height: 140%; */
+  margin-bottom: 10px;
+}
+
+.question-wrapper-for-one {
+  margin-bottom: 20px;
 }
 
 .dropdown-wrapper {
@@ -23,7 +28,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 140%;
+  /* line-height: 140%; */
   color: #7c7c7c;
   display: flex;
   align-items: center;

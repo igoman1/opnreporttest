@@ -59,7 +59,7 @@ const Dropdown = (props) => {
     props.onSelect(event);
   };
   return (
-    <div>
+    <div className="question-wrapper-for-one">
       <div className="question">{props.title}</div>
 
       <Select

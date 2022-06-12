@@ -33,7 +33,7 @@ const InputForm = (props) => {
   };
 
   const submitHandler = async () => {
-    if (department === "" || location === "") {
+    if (department === "" || location === "") { 
       return;
     }
     console.log(department, location);
