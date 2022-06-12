@@ -3,7 +3,7 @@ import './result.css';
 import WhiteHeader from './../layout/WhiteHeader';
 import ApexChart from 'react-apexcharts';
 import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
-import Section1 from "./Section1";
+import Menu from "../layout/Menu";
 
 
 const donutData = {
@@ -90,12 +90,8 @@ const Result = () => {
     return (
         <>
         <div className="App">
-            <header className={cls}><WhiteHeader /></header>
+            <header className={cls}><WhiteHeader /><Menu /></header>
         </div>
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
         <div className='result-layout'>
             결과입니다
             <ApexChart 

@@ -1,7 +1,7 @@
 .result-layout {
     height: 5000px;
     border: 10px solid red;
-}
+  }
 
 .visible {
     /* display: flex; */
