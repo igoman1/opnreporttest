@@ -1,12 +1,10 @@
 // 개요 section
 
 import React from 'react';
-import Cover from './../layout/Cover';
 
 const Section1 = () => {
     return (
-        <div>
-            <Cover />
+        <div style={{height: '200px'}}>
             개요 섹션 입니다
         </div>
     );

@@ -4,7 +4,11 @@ import WhiteHeader from './../layout/WhiteHeader';
 import ApexChart from 'react-apexcharts';
 import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
 import Menu from "../layout/Menu";
-
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+import Section4 from "./Section4";
+import Cover from "../layout/Cover";
 
 const donutData = {
     series: [50,40,30,10,0],
@@ -92,6 +96,11 @@ const Result = () => {
         <div className="App">
             <header className={cls}><WhiteHeader /><Menu /></header>
         </div>
+        <Cover />
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
         <div className='result-layout'>
             결과입니다
             <ApexChart 

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Section4 = () => {
     return (
-        <div>
+        <div style={{height: '200px'}}>
             고객분석 섹션 입니다            
         </div>
     );
