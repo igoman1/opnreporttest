@@ -1,12 +1,20 @@
 import React from 'react';
-import cover1 from "../asset/Cover1.png"
+import './cover.css';
 
-const Cover = () => {
+const Cover = (props) => {
+    const file = require(`../asset/${props.fileName}`);
+
+    const coverStyle = {
+        background: `url(${file}) no-repeat center`,
+        backgroundSize: "cover",
+        height: "100vh",
+    }
+
     return (
         <>
-        <div className="cover">
-            <img src ={cover1} />
+        <div style={coverStyle}>
         </div>
+        <div>{props.sectionHeader.sectionList}</div>
         </>
     );
 };
