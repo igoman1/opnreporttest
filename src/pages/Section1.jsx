@@ -13,7 +13,7 @@ const Section1 = () => {
     }
 
     return (
-        <div style={{height: '200px'}}>
+        <div>
             <Cover 
             fileName="Cover1.png"
             sectionHeader={sectionHeader}/>
