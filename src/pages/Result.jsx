@@ -96,10 +96,10 @@ const Result = () => {
             <header className={cls}><WhiteHeader /><Menu /></header>
         </div>
         <Section1 />
-        <Section2 />
+        {/* <Section2 />
         <Section3 />
-        <Section4 />
-        <div className='result-layout'>
+        <Section4 /> */}
+        {/* <div className='result-layout'>
             결과입니다
             <ApexChart 
             options={donutData.options}
@@ -107,7 +107,7 @@ const Result = () => {
             type="donut" 
             width="500"
         />
-        </div>
+        </div> */}
         </>
     );
 };

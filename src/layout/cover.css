@@ -3,3 +3,37 @@
     background-size: cover;
     height: 100vh;
 }
+.section-header {
+    position: absolute;
+    top: 145px;
+    width: 100%;
+}
+
+.section-title{
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 16px;
+    padding:16px;
+
+
+    color: white;
+    
+}
+
+.section-list{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 36px;
+    
+    position: absolute;
+    color:white;
+}
+
+.section-list-item{
+    margin-bottom: 8px;
+}

@@ -13,8 +13,17 @@ const Cover = (props) => {
     return (
         <>
         <div style={coverStyle}>
+            <div className='section-header'>
+                <div className='section-title'>{props.sectionHeader.sectionTitle}</div>
+
+                <div className='section-list'>
+                    {props.sectionHeader.sectionList.map((item)=>{
+                        return <div className='section-list-item'>{item}</div> 
+                    })}
+                    
+                    </div>
+            </div>
         </div>
-        <div>{props.sectionHeader.sectionList}</div>
         </>
     );
 };
