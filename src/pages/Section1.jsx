@@ -2,6 +2,9 @@
 
 import React from 'react';
 import Cover from '../layout/Cover';
+import BarChart from '../components/BarChart';
+import LineChart from './../components/LineChart';
+import DonutChart from '../components/DonutChart';
 
 
 const Section1 = () => {
@@ -17,7 +20,12 @@ const Section1 = () => {
             <Cover 
             fileName="Cover1.png"
             sectionHeader={sectionHeader}/>
-            개요 섹션 입니다
+            <div>
+            결과입니다
+                <BarChart />
+                <LineChart />
+                <DonutChart />
+            </div>
         </div>
     );
 };
