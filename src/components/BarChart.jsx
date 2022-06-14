@@ -4,6 +4,9 @@ import Chart from "react-apexcharts";
 class BarChart extends Component {
   constructor(props) {
     super(props);
+    // yaxis:{
+    //   show: false;
+    // }
 
     this.state = {
       options: {
@@ -12,6 +15,11 @@ class BarChart extends Component {
         },
         xaxis: {
           categories: ['2020년', '2021년', '2022년']
+        },
+        yaxis: {
+          labels: {
+            show: false
+          }
         }
       },
       series: [

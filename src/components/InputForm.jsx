@@ -37,21 +37,26 @@ const InputForm = (props) => {
       return;
     }
     console.log(department, location);
-
-    let httpRequestIsOK = false;
     setIsLoading(true);
-    setTimeout(() => {
-      try {
-        if (!httpRequestIsOK) {
-          throw new Error("분석에 실패했습니다.");
-        }
-        navigate("/report");
-      } catch (error) {
-        alert(error.message);
-      } finally {
-        setIsLoading(false);
-      }
-    }, 1000);
+    
+    analyze()
+        .then(() => {
+            setIsLoading(false);
+            navigate("/report");
+        })
+        .catch((error) => {
+            setIsLoading(false);
+            alert(error.message);
+        });
+  };
+
+  const analyze = async () => {
+    const resp = await fetch(
+        `https://opn-server2.herokuapp.com/report/?department=치과&location=서울특별시 강남구 신사동`
+    );
+    if (!resp.ok) {
+        throw new Error("Something went wrong!");
+    }
   };
 
   return (
