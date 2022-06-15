@@ -5,6 +5,8 @@ import Cover from '../layout/Cover';
 import BarChart from '../components/BarChart';
 import LineChart from './../components/LineChart';
 import DonutChart from '../components/DonutChart';
+import Intro from '../layout/Intro';
+import Dictionary from '../layout/Dictionary';
 
 
 const Section1 = () => {
@@ -16,17 +18,22 @@ const Section1 = () => {
     }
 
     return (
+        <>
         <div>
             <Cover 
             fileName="Cover1.png"
             sectionHeader={sectionHeader}/>
-            <div>
-            결과입니다
-                <BarChart />
+            <div className='section1'>
+            <Intro/>
+            <Dictionary />
+                {/* <BarChart />
                 <LineChart />
-                <DonutChart />
+                <DonutChart /> */}
             </div>
         </div>
+
+        </>
+
     );
 };
 

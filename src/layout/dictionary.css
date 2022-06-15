@@ -1,0 +1,69 @@
+.dictionary-box{
+    background: #EDEDEC;
+    border-radius: 14px;
+    position:absolute;
+    top: 1800px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.dictionary-header {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+color: #000000;
+
+opacity: 0.3;
+
+}
+
+.dictionary-body-wrapper{
+    padding:5px;
+    margin-top:23px;
+}
+
+.dictionary-body{
+    display: flex;
+}
+
+.dictionary-body-word{
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+width: 50px;
+color: #3955B4;
+margin-right:10px;
+}
+
+.dictionary-body-meaning{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    
+    color: #000000;
+}
+
+
+.dictionary-body-explanation{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    color: #000000;
+    margin-top:6px;
+}
+
+.dictionary-line{
+
+height: 0px;
+border: 1.0424px solid #DCDCDC;
+margin: 12px 0px 12px 0px;
+}
+
+
+
+
+

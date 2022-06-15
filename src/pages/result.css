@@ -21,3 +21,6 @@ header {
   position: fixed;
   width: 100%;
 }
+.section1{
+  display: flex;
+}
