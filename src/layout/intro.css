@@ -1,5 +1,4 @@
 .intro-first-box {
-    position: absolute;
     border: 1px solid #EDEDEC;
     border-radius: 14px;
     margin: 20px;
@@ -23,14 +22,14 @@
 }
 
 .intro-body-1-right {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .intro-paragraph{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 32px;
 }
 
@@ -38,7 +37,7 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 9px; 
 } 
 
@@ -46,7 +45,7 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     margin-top: 15px;
     color: #3955B4;
@@ -56,7 +55,7 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: #121212;
 
 }

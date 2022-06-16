@@ -23,13 +23,11 @@ const Section1 = () => {
             <Cover 
             fileName="Cover1.png"
             sectionHeader={sectionHeader}/>
-            <div className='section1'>
             <Intro/>
             <Dictionary />
                 {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}
-            </div>
         </div>
 
         </>
