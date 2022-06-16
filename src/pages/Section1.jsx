@@ -7,6 +7,7 @@ import LineChart from './../components/LineChart';
 import DonutChart from '../components/DonutChart';
 import Intro from '../layout/Intro';
 import Dictionary from '../layout/Dictionary';
+import HospitalList from '../layout/HospitalList';
 
 
 const Section1 = () => {
@@ -23,13 +24,12 @@ const Section1 = () => {
             <Cover 
             fileName="Cover1.png"
             sectionHeader={sectionHeader}/>
-            <div className='section1'>
             <Intro/>
             <Dictionary />
+            <HospitalList/>
                 {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}
-            </div>
         </div>
 
         </>

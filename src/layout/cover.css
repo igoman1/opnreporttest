@@ -4,7 +4,7 @@
     height: 100vh;
 }
 .section-header {
-    position: absolute;
+    position: relative;
     top: 145px;
     width: 100%;
 }
@@ -30,7 +30,6 @@
     font-size: 14px;
     margin-left: 36px;
     
-    position: absolute;
     color:white;
 }
 
