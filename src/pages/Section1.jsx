@@ -7,6 +7,7 @@ import LineChart from './../components/LineChart';
 import DonutChart from '../components/DonutChart';
 import Intro from '../layout/Intro';
 import Dictionary from '../layout/Dictionary';
+import HospitalList from '../layout/HospitalList';
 
 
 const Section1 = () => {
@@ -25,6 +26,7 @@ const Section1 = () => {
             sectionHeader={sectionHeader}/>
             <Intro/>
             <Dictionary />
+            <HospitalList/>
                 {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}

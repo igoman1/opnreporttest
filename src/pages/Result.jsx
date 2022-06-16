@@ -34,8 +34,8 @@ const Result = () => {
             <header className={cls}><WhiteHeader /><Menu /></header>
         </div>
         <Section1 />
-        {/* <Section2 />
-        <Section3 />
+        <Section2 />
+        {/* <Section3 />
         <Section4 /> */}
 
         </>
