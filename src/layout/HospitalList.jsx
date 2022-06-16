@@ -19,31 +19,36 @@ const HospitalList = () => {
             accessor: "year",
             Header: "Year",
           },
-        //   {
-        //     accessor: "area",
-        //     Header: "Area",
-        //   },
-        //   {
-        //     accessor: "prof",
-        //     Header: "Prof",
-        //   },
+          {
+            accessor: "area",
+            Header: "Area",
+          },
+          {
+            accessor: "prof",
+            Header: "Prof",
+          },
         ],
         []
       );
 
       const data = useMemo(
         () =>
-          Array(53)
+          Array(10)
             .fill()
             .map(() => ({
               name: faker.name.lastName(),
               department: faker.internet.email(),
               year: faker.phone.phoneNumber(),
-            //   area: faker.date.date(),
-            //   prof: faker.name.firstName(),
+              area: faker.date.month(),
+              prof: faker.name.firstName(),
             })),
         []
       );
+
+      const data1 = [10]
+      console.log({data1})
+
+      console.log(faker.date)
 
     return (
         <div>
