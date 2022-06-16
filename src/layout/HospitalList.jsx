@@ -12,13 +12,21 @@ const HospitalList = () => {
             Header: "Name",
           },
           {
-            accessor: "email",
-            Header: "Email",
+            accessor: "department",
+            Header: "Department",
           },
           {
-            accessor: "phone",
-            Header: "Phone",
+            accessor: "year",
+            Header: "Year",
           },
+        //   {
+        //     accessor: "area",
+        //     Header: "Area",
+        //   },
+        //   {
+        //     accessor: "prof",
+        //     Header: "Prof",
+        //   },
         ],
         []
       );
@@ -28,9 +36,11 @@ const HospitalList = () => {
           Array(53)
             .fill()
             .map(() => ({
-              name: faker.name.lastName() + faker.name.firstName(),
-              email: faker.internet.email(),
-              phone: faker.phone.phoneNumber(),
+              name: faker.name.lastName(),
+              department: faker.internet.email(),
+              year: faker.phone.phoneNumber(),
+            //   area: faker.date.date(),
+            //   prof: faker.name.firstName(),
             })),
         []
       );
