@@ -1,10 +1,12 @@
 import React, {useMemo} from 'react';
 import faker from 'faker';
 import Table from '../components/Table';
+import './hospital-list.css';
+import Card from '../components/Card';
 
 faker.seed(100);
 
-const HospitalList = () => {
+const HospitalList = (props) => {
     const columns = useMemo(
         () => [
           {
@@ -46,14 +48,13 @@ const HospitalList = () => {
       );
 
       const data1 = [10]
-      console.log({data1})
-
-      console.log(faker.date)
 
     return (
-        <div>
+          <Card>
+          <div className='hospital-list-text'>{props.listTitle}</div>
             <Table columns={columns} data={data} />
-        </div>
+          </Card>
+
     );
 };
 

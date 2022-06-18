@@ -36,7 +36,6 @@ const InputForm = (props) => {
     if (department === "" || location === "") { 
       return;
     }
-    console.log(department, location);
     setIsLoading(true);
     
     analyze()

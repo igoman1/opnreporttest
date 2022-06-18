@@ -8,6 +8,7 @@ import DonutChart from '../components/DonutChart';
 import Intro from '../layout/Intro';
 import Dictionary from '../layout/Dictionary';
 import HospitalList from '../layout/HospitalList';
+import OpenHere from '../components/OpenHere';
 
 
 const Section1 = () => {
@@ -26,7 +27,9 @@ const Section1 = () => {
             sectionHeader={sectionHeader}/>
             <Intro/>
             <Dictionary />
-            <HospitalList/>
+            <HospitalList
+            listTitle='의료기관 목록'/>
+            <OpenHere />
                 {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}

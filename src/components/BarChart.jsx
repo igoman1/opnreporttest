@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import './chart-form.css';
 
-class BarChart extends Component {
-  constructor(props) {
-    super(props);
+const BarChart =(props) => {
     // yaxis:{
     //   show: false;
     // }
 
-    this.state = {
-      options: {
+    const options = {
         chart: {
           id: "basic-bar"
         },
@@ -21,32 +19,38 @@ class BarChart extends Component {
             show: false
           }
         }
-      },
-      series: [
+      }
+
+    const series = [
         {
           name: "series-1",
           data: [680044, 773040, 754323]
         }
       ]
-    };
-  }
 
-  render() {
     return (
+      <div className="chart-wrapper">
+        <div className="chart-title-area">
+          <div className="chart-header">
+            <div className="chart-name">{props.chartName}</div>
+            <div className="chart-unit">단위: {props.chartUnit}</div>
+          </div>
+            <div className="chart-note">{props.chartNote}</div>
+      </div>
       <div className="app">
         <div className="row">
           <div className="mixed-chart">
             <Chart
-              options={this.state.options}
-              series={this.state.series}
+              options={options}
+              series={series}
               type="bar"
               width="500"
             />
           </div>
         </div>
       </div>
+      </div>
     );
-  }
 }
 
 export default BarChart;

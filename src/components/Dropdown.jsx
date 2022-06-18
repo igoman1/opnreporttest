@@ -55,7 +55,6 @@ const Dropdown = (props) => {
   };
 
   const selectHandler = (event) => {
-    console.log(event);
     props.onSelect(event);
   };
   return (

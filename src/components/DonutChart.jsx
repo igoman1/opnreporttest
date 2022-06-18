@@ -1,26 +1,22 @@
 import React, { Component } from 'react';
 import Chart from 'react-apexcharts'
+import './chart-form.css';
 
-class DonutChart extends Component {
+const DonutChart = (props) => {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      options: {},
-      series: [44, 55, 41, 17, 15],
-      labels: ['A', 'B', 'C', 'D', 'E']
-    }
-  }
-
-  render() {
+    const options = {};
+    const series = [44, 55, 41, 17, 15];
+    const labels = ['A', 'B', 'C', 'D', 'E'];
 
     return (
-      <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
+      <div className='chart-wrapper'>
+        <div className='donut-title'>{props.title}</div>
+          <div className='donut-header'>{props.header}</div>
+        <div className="donut">
+          <Chart options={options} series={series} type="donut" width="380" />
+        </div>
       </div>
     );
-  }
 }
 
 export default DonutChart;

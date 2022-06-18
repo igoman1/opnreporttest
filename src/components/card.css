@@ -1,0 +1,13 @@
+.card{
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+/* OD_light grey */
+
+border: 1px solid #EDEDEC;
+border-radius: 14px;
+/* display: flex;
+justify-content: center; */
+
+
+}

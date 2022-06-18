@@ -2,11 +2,12 @@ import React from 'react';
 import pin from '../asset/pin_icon.svg';
 import iconDent from '../asset/icon-치과.svg';
 import './intro.css';
+import Card from './../components/Card';
 
 const Intro = () => {
     return (
         <>
-        <div className='intro-first-box'>
+        <Card>
             <div className='intro-head'>
                 <img src={pin} />
                 <span className='intro-dong-name'>서울특별시 강남구 역삼1동</span>
@@ -31,7 +32,7 @@ const Intro = () => {
             </div>
             <div className='intro-guide-text-bot'>분석에 활용되는 진료과</div>
             <div className='intro-dep-name-bot'>치과</div>
-        </div>
+        </Card>
         </>
     );
 };

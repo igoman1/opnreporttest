@@ -1,44 +1,42 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import './chart-form.css';
 
-class LineChart extends Component {
-  constructor(props) {
-    super(props);
+const LineChart = (props) => {
 
-    this.state = {
-      options: {
+      const options = {
         chart: {
           id: "basic-bar"
         },
         xaxis: {
           categories: ['21년 5월', '6월', '7월', '8월', '9월','10월', '11월', '12월', '22년 1월', '2월', '3월', '4월']
         }
-      },
-      series: [
+      }
+      const series = [
         {
           name: "series-1",
           data: [680044, 773040, 754323, 680044, 773040, 754323, 680044, 773040, 754323, 680044, 773040, 754323]
         }
       ]
-    };
-  }
-
-  render() {
     return (
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="line"
-              width="500"
-            />
+      <div className="chart-wrapper">
+        <div className="chart-header">
+          <div className="chart-name">{props.chartName}</div>
+          <div className="chart-unit">단위: {props.chartUnit}</div>
+        </div>
+        <div className="app">
+          <div className="row">
+            <div className="mixed-chart">
+              <Chart
+                options={options}
+                series={series}
+                type="line"
+                // width="500px"
+              />
+            </div>
           </div>
         </div>
       </div>
     );
-  }
-}
-
+ }
 export default LineChart;
