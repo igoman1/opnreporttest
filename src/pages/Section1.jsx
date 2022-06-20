@@ -29,7 +29,7 @@ const Section1 = () => {
             <Dictionary />
             <HospitalList
             listTitle='의료기관 목록'/>
-            <OpenHere />
+
                 {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}

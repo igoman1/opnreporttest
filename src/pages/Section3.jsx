@@ -1,12 +1,12 @@
 // 경쟁분석 section
 import React from 'react';
-import CompBar from './../components/CompBar';
 import Cover from './../layout/Cover';
 import KeyNumber3x1Comp from './../layout/KeyNumber3x1Comp';
 import SectionBody from './../layout/SectionBody';
 import Card from './../components/Card';
 import BarChart from './../components/BarChart';
 import HospitalList from '../layout/HospitalList';
+import CompIndex from './../layout/CompIndex';
 
 const Section3 = () => {
     
@@ -31,7 +31,7 @@ const Section3 = () => {
             chartNote='상위 10개 의원만 표시 중' />
         </Card>
         <Card>
-            <CompBar />
+            <CompIndex/>
         </Card>
         <HospitalList
         listTitle= '신규 의원 목록(최근24개월 간)' />

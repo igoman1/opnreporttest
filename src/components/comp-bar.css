@@ -1,5 +1,6 @@
 #progress {
     appearance: none;
+    width: 50%;
 
 }
 #progress::-webkit-progress-bar {

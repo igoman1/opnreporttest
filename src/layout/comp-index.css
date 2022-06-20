@@ -1,0 +1,44 @@
+.comp-box-wrapper{
+    /* display: flex; */
+
+    
+}
+
+.comp-index-title {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+
+color: #3955B4;
+margin-bottom: 18px;
+
+
+}
+.comp-index-sum{
+display:flex;
+justify-content: right;
+align-items: center;
+}
+.comp-index-sum-text{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    /* identical to box height, or 17px */
+    
+    text-align: center;
+    
+    /* OD_black */
+    
+    color: #202020;
+    margin-right:18px;
+    
+
+}
+.comp-index-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
