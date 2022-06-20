@@ -12,12 +12,38 @@ const InputForm = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const departmentOptions = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
+    { value: "일반의원", label: "일반의원" },
+    { value: "가정의학과", label: "가정의학과" },
+    { value: "내과", label: "내과" },
+    { value: "소아청소년과", label: "소아청소년과" },
+    { value: "이비인후과", label: "이비인후과" },
+    { value: "마취통증의학과", label: "마취통증의학과" },
+    { value: "재활의학과", label: "재활의학과" },
+    { value: "정형외과", label: "정형외과" },
+    { value: "신경외과", label: "신경외과" },
+    { value: "신경과", label: "신경과" },
+    { value: "정신건강의학과", label: "정신건강의학과" },
+    { value: "병리과", label: "병리과" },
+    { value: "진단검사의학과", label: "진단검사의학과" },
+    { value: "피부과", label: "피부과" },
+    { value: "성형외과", label: "성형외과" },
+    { value: "외과", label: "외과" },
+    { value: "비뇨의학과", label: "비뇨의학과" },
+    { value: "산부인과", label: "산부인과" },
+    { value: "안과", label: "안과" },
+    { value: "결핵과", label: "결핵과" },
+    { value: "흉부외과", label: "흉부외과" },
+    { value: "직업환경의학과", label: "직업환경의학과" },
+    { value: "예방의학과", label: "예방의학과" },
+    { value: "응급의학과", label: "응급의학과" },
+    { value: "영상의학과", label: "영상의학과" },
+    { value: "방사선종양학과", label: "방사선종양학과" },
+    { value: "치과", label: "치과" },
+    { value: "핵의학과", label: "핵의학과" },
   ];
+
   const locationOptions = [
-    { value: "경기도 고양시 마두동", label: "경기도 고양시 마두동" },
+    { value: "서울시 강남구 신사동", label: "서울시 강남구 신사동" },
     { value: "수원시 팔달구 우만동", label: "수원시 팔달구 우만동" },
     { value: "서울시 관악구 신림동", label: "서울시 관악구 신림동" },
   ];
@@ -51,7 +77,7 @@ const InputForm = (props) => {
 
   const analyze = async () => {
     const resp = await fetch(
-        `https://opn-server2.herokuapp.com/report/?department=치과&location=서울특별시 강남구 신사동`
+        `https://opn-server2.herokuapp.com/report/?department=${department}&location=${location}`
     );
     if (!resp.ok) {
         throw new Error("Something went wrong!");
