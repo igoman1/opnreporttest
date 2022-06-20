@@ -7,12 +7,23 @@ import ReactDOM from "react-dom";
 import Result from "./pages/Result";
 
 function App() {
+
+const [resultData, setResultData] =useState({});
+
+const inputHandlerApp = (inputDataApp) => {
+  setResultData(inputDataApp);
+    // console.log(inputDataApp);
+  }
+
+
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/report" element={<Result />} />
+          <Route path="/home" element={<Home
+          inputHandlerApp={inputHandlerApp} />} />
+          <Route path="/report" element={<Result
+          data={resultData} />} />
         </Routes>
       </BrowserRouter>
     </>

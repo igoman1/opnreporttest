@@ -2,7 +2,7 @@ import React from 'react';
 import './key-number-box.css';
 
 const KeyNumberBoxFat = (props) => {
-console.log(props)
+// console.log(props)
     return (
             <div className='key-number-box-fat-wrapper'>
                 <div className='key-number-box-fat'>

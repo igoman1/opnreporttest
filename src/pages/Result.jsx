@@ -8,7 +8,7 @@ import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 
-const Result = () => {
+const Result = (props) => {
 
     const [position, setPosition] = useState(window.pageYOffset)
     const [visible, setVisible] = useState(true) 
@@ -27,6 +27,8 @@ const Result = () => {
   
   const cls = visible ? "visible" : "hidden";
 
+  const finalData = props.data;
+  console.log(finalData);
   
     return (
         <>

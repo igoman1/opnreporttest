@@ -4,13 +4,13 @@ import iconDent from '../asset/icon-치과.svg';
 import './intro.css';
 import Card from './../components/Card';
 
-const Intro = () => {
+const Intro = (props) => {
     return (
         <>
         <Card>
             <div className='intro-head'>
                 <img src={pin} />
-                <span className='intro-dong-name'>서울특별시 강남구 역삼1동</span>
+                <span className='intro-dong-name'>{props.address_sido_sigungu} {props.address_dong}</span>
             </div>
             <div className='intro-body-1'>
                 <div className='intro-body-1-left'>

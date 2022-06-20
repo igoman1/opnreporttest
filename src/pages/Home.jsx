@@ -1,13 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import InputForm from "../components/InputForm";
 import ColoredHeader from "../layout/ColoredHeader";
 import "./home.css";
 
-const Home = () => {
+const Home = (props) => {
+
   return (
     <>
       <ColoredHeader />
-      <InputForm></InputForm>
+      <InputForm 
+      input={props.inputHandlerApp}/>
     </>
   );
 };
