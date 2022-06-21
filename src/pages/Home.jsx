@@ -1,17 +1,18 @@
-import React, {useState} from "react";
-import InputForm from "../components/InputForm";
-import ColoredHeader from "../layout/ColoredHeader";
 import "./home.css";
 
-const Home = (props) => {
+import React, { useState } from "react";
 
-  return (
-    <>
-      <ColoredHeader />
-      <InputForm 
-      input={props.inputHandlerApp}/>
-    </>
-  );
+import ColoredHeader from "../layout/ColoredHeader";
+import InputForm from "../components/InputForm";
+import WhiteHeader from "../layout/WhiteHeader";
+
+const Home = (props) => {
+    return (
+        <>
+            <ColoredHeader />
+            <InputForm input={props.inputHandlerApp} />
+        </>
+    );
 };
 
 export default Home;

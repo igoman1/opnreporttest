@@ -38,6 +38,8 @@ const Result = (props) => {
                 });
             for (let i = 0; i < targets.length; i++) {
                 if (targets[i] < 0) {
+                    setIsInCover(false);
+
                     continue;
                 }
                 if (0 <= targets[i] && targets[i] <= coverHeight) {

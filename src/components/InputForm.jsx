@@ -49,9 +49,94 @@ const InputForm = (props) => {
     ];
 
     const locationOptions = [
-        { value: "경기도 고양시 마두동", label: "경기도 고양시 마두동" },
-        { value: "수원시 팔달구 우만동", label: "수원시 팔달구 우만동" },
-        { value: "서울시 강남구 신사동", label: "서울시 강남구 신사동" },
+        {
+            value: "서울특별시 강남구 신사동",
+            label: "서울특별시 강남구 신사동",
+        },
+        {
+            value: "서울특별시 강남구 논현1동",
+            label: "서울특별시 강남구 논현1동",
+        },
+        {
+            value: "서울특별시 강남구 논현2동",
+            label: "서울특별시 강남구 논현2동",
+        },
+        {
+            value: "서울특별시 강남구 압구정동",
+            label: "서울특별시 강남구 압구정동",
+        },
+        {
+            value: "서울특별시 강남구 청담동",
+            label: "서울특별시 강남구 청담동",
+        },
+        {
+            value: "서울특별시 강남구 삼성1동",
+            label: "서울특별시 강남구 삼성1동",
+        },
+        {
+            value: "서울특별시 강남구 삼성2동",
+            label: "서울특별시 강남구 삼성2동",
+        },
+        {
+            value: "서울특별시 강남구 대치1동",
+            label: "서울특별시 강남구 대치1동",
+        },
+        {
+            value: "서울특별시 강남구 대치2동",
+            label: "서울특별시 강남구 대치2동",
+        },
+        {
+            value: "서울특별시 강남구 대치4동",
+            label: "서울특별시 강남구 대치4동",
+        },
+        {
+            value: "서울특별시 강남구 역삼1동",
+            label: "서울특별시 강남구 역삼1동",
+        },
+        {
+            value: "서울특별시 강남구 역삼2동",
+            label: "서울특별시 강남구 역삼2동",
+        },
+        {
+            value: "서울특별시 강남구 도곡1동",
+            label: "서울특별시 강남구 도곡1동",
+        },
+        {
+            value: "서울특별시 강남구 도곡2동",
+            label: "서울특별시 강남구 도곡2동",
+        },
+        {
+            value: "서울특별시 강남구 개포1동",
+            label: "서울특별시 강남구 개포1동",
+        },
+        {
+            value: "서울특별시 강남구 개포2동",
+            label: "서울특별시 강남구 개포2동",
+        },
+        {
+            value: "서울특별시 강남구 개포4동",
+            label: "서울특별시 강남구 개포4동",
+        },
+        {
+            value: "서울특별시 강남구 세곡동",
+            label: "서울특별시 강남구 세곡동",
+        },
+        {
+            value: "서울특별시 강남구 일원본동",
+            label: "서울특별시 강남구 일원본동",
+        },
+        {
+            value: "서울특별시 강남구 일원1동",
+            label: "서울특별시 강남구 일원1동",
+        },
+        {
+            value: "서울특별시 강남구 일원2동",
+            label: "서울특별시 강남구 일원2동",
+        },
+        {
+            value: "서울특별시 강남구 수서동",
+            label: "서울특별시 강남구 수서동",
+        },
     ];
 
     let isValid = department !== "" && location !== "";
@@ -68,7 +153,6 @@ const InputForm = (props) => {
         if (department === "" || location === "") {
             return;
         }
-        // console.log(department, location);
         setIsLoading(true);
 
         analyze()
@@ -84,7 +168,7 @@ const InputForm = (props) => {
 
     const analyze = async () => {
         const resp = await fetch(
-            `https://opn-server2.herokuapp.com/report/?department=치과&location=서울특별시 강남구 신사동`
+            `https://opn-server2.herokuapp.com/report/?department=${department}&location=${location}`
         );
         const respJSON = await resp.json();
         setFetchedData(respJSON);

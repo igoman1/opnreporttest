@@ -1,24 +1,29 @@
-.colored-header-container{
+.color-header {
+    height: 50px;
+    /* position: fixed; */
+    /* top: 0px; */
+    padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo-colored {
-    height: 27px;
-    margin: 15px;
+    width: 70px;
+    height: 21px;
 }
 
-.colored-header-description{
-    color: #3955B4;
-    /* position: absolute;
-    width: 112px;
-    height: 22px;
-    left: 126px;
-    top: 20px; */
-
-    font-family: 'Noto Sans';
+.color-previous-page-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3955b4;
+}
+.colored-header-description {
+    color: #3955b4;
+    font-family: "Noto Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    /* line-height: 140%; */
 }

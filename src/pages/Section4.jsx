@@ -61,4 +61,4 @@ const Section4 = (props) => {
     );
 };
 
-export default Section4;
+export default React.memo(Section4);
