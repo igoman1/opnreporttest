@@ -7,6 +7,7 @@ const BarChart =(props) => {
     //   show: false;
     // }
     const data = props.input;
+    console.log(data)
 
     const options = {
         chart: {

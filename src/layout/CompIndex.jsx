@@ -10,7 +10,7 @@ const CompIndex = (props) => {
         <div>
             <div className="comp-index-title">의원별 점유율과 경쟁 지표</div>
             <CompBoxCombinded
-            input={props.input}/>
+            input={props.input.competition_table}/>
             <div className="comp-index-sum">
                 <span className="comp-index-sum-text">그외 92개 의원</span>
             <CompBoxWhite

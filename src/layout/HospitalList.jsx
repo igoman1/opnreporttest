@@ -4,11 +4,18 @@ import React, { useMemo, useState } from "react";
 
 import Card from "../components/Card";
 import Table from "../components/Table";
-import faker from "faker";
+// import faker from "faker";
 
-faker.seed(100);
+// faker.seed(100);
 
 const HospitalList = (props) => {
+    // const rawData = props.input
+    // const tmp = rawData[0]
+    // const dataColumn = Object.keys(tmp)
+    // console.log(rawData)
+    // console.log(dataColumn)
+   
+    
     const columns = useMemo(
         () => [
             {
@@ -20,7 +27,7 @@ const HospitalList = (props) => {
                 Header: "진료과",
             },
             {
-                accessor: "year",
+                accessor: "open_year",
                 Header: "개원년도",
             },
             {
@@ -35,19 +42,21 @@ const HospitalList = (props) => {
         []
     );
 
-    const data = useMemo(
-        () =>
-            Array(10)
-                .fill()
-                .map(() => ({
-                    name: faker.name.lastName(),
-                    department: faker.internet.email(),
-                    year: faker.phone.phoneNumber(),
-                    area: faker.date.month(),
-                    prof: faker.name.firstName(),
-                })),
-        []
-    );
+    const data = props.input
+
+    // const data = useMemo(
+    //     () =>
+    //         Array(10)
+    //             .fill()
+    //             .map(() => ({
+    //                 name: faker.name.lastName(),
+    //                 department: faker.internet.email(),
+    //                 year: faker.phone.phoneNumber(),
+    //                 area: faker.date.month(),
+    //                 prof: faker.name.firstName(),
+    //             })),
+    //     []
+    // );
 
     return (
         <Card>

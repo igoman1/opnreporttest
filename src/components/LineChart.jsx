@@ -4,6 +4,7 @@ import './chart-form.css';
 
 const LineChart = (props) => {
   const data=props.input;
+  // console.log(props.input)
 
       const options = {
         chart: {
