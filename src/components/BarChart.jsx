@@ -1,62 +1,87 @@
-import React, { Component } from "react";
-import Chart from "react-apexcharts";
-import './chart-form.css';
+import "./chart-form.css";
 
-const BarChart =(props) => {
+import React, { Component } from "react";
+
+import Chart from "react-apexcharts";
+
+const BarChart = (props) => {
     // yaxis:{
     //   show: false;
     // }
-    const data = props.input;
-    console.log(data)
+    const rawData = props.input;
+    // console.log(rawData)
+    const chartValue = Object.values(rawData)
+    // console.log(chartValue)
 
     const options = {
         chart: {
-          id: "basic-bar"
+            id: "basic-bar",
+            toolbar: {
+                show: false,
+            },
         },
+        colors: "#3955B4",
+
         xaxis: {
-          categories: ['2020년', '2021년', '2022년']
+            axisTicks: {
+                show: false,
+            },
+            categories: ["2020년", "2021년", "2022년"],
         },
         yaxis: {
-          labels: {
-            show: false
-          }
-        }
-      }
+            labels: {
+                show: false,
+            },
+        },
+        dataLabels: {
+            offsetY: -20,
+            style: {
+                fontSize: "12px",
+                colors: ["#000"],
+            },
+        },
+        grid: {
+            show: false,
+        },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                dataLabels: {
+                    position: "top",
+                    offsetY: 10,
+                },
+            },
+        },
+    };
 
     const series = [
         {
-          name: "series-1",
-          data: [680044, 773040, 754323]
-        }
-      ]
+            name: "series-1",
+            data: chartValue,
+        },
+    ];
 
     return (
-      <div className="chart-wrapper">
-        <div className="chart-title-area">
-          <div className="chart-header">
-            <div className="chart-name">{props.chartName}</div>
-            <div className="chart-unit">단위: {props.chartUnit}</div>
-          </div>
-            <div className="chart-note">{props.chartNote}</div>
-      </div>
-      <div className="app">
-        <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={options}
-              series={series}
-              type="bar"
-              width="500"
-            />
-          </div>
+        <div className="chart-wrapper">
+            <div className="chart-title-area">
+                <div className="chart-header">
+                    <div className="chart-name">{props.chartName}</div>
+                    <div className="chart-unit">단위: {props.chartUnit}</div>
+                </div>
+                <div className="chart-note">{props.chartNote}</div>
+            </div>
+            <div className="app">
+                <div className="row">
+                    <div className="mixed-chart">
+                        <Chart options={options} series={series} type="bar" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
     );
-}
+};
 
 export default BarChart;
-
 
 // const donutData = {
 //     series: [50,40,30,10,0],
@@ -73,7 +98,7 @@ export default BarChart;
 //       plotOptions: {
 //         pie: {
 //           donut: {
-//             // hollow: {  
+//             // hollow: {
 //             //   margin: 15,
 //             //   size: '70%',
 //             //   image: '../../css/images/a-icon.jpg',

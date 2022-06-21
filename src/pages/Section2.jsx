@@ -43,14 +43,14 @@ const Section2 = (props) => {
                         <LineChart
                             chartName="의원 개수 단기 추세 (12개월)"
                             chartUnit="개"
-                            input={props.input['12m_trend_chart']}
+                            input={props.input['hospital_count_chart']}
                         />
                     </Card>
                     <Card>
                         <BarChart
                             chartName="의원 개수 장기 추세 (3년)"
                             chartUnit="개"
-                            input={props.input['3y_trend_chart']}
+                            input={props.input['hospital_count_chart']}
                         />
                     </Card>
                     <Card>

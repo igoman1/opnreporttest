@@ -14,9 +14,9 @@ const CompBoxCombinded = (props) => {
         <div>
         {data.map((item)=>{
             return <div className="comp-box-combinded">
-            <CompBox name="매출액" num={data.profit} />
-            <CompBox name="점유율" num={data.acquisition_rate} />
-            <CompBoxWhite name="점유율 제곱" num={data.rate_squared} />
+            <CompBox name="매출액" num={item.profit} />
+            <CompBox name="점유율" num={item.acquisition_rate} />
+            <CompBoxWhite name="점유율 제곱" num={item.rate_squared} />
         </div>
             
         })}
