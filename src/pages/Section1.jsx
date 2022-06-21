@@ -1,41 +1,44 @@
 // 개요 section
 
-import React from 'react';
-import Cover from '../layout/Cover';
-import Intro from '../layout/Intro';
-import Dictionary from '../layout/Dictionary';
-import HospitalList from '../layout/HospitalList';
+import Cover from "../layout/Cover";
+import Dictionary from "../layout/Dictionary";
+import HospitalList from "../layout/HospitalList";
+import Intro from "../layout/Intro";
+import React from "react";
 
+const Section1 = React.memo(
+    React.forwardRef((props, target) => {
+        const imagePath = "cover1.png";
 
-const Section1 = (props) => {
-    const imagePath='cover1.png';
+        const sectionHeader = {
+            sectionTitle: "개요",
+            sectionList: ["의료기관 목록", "개원여기 분석 결과"],
+        };
 
-    const sectionHeader = {
-        sectionTitle: "개요",
-        sectionList: ['의료기관 목록', '개원여기 분석 결과']
-    }
+        return (
+            <>
+                <div>
+                    <Cover
+                        ref={target}
+                        fileName="Cover1.png"
+                        sectionHeader={sectionHeader}
+                    />
+                    <div id="section-1">
+                        <Intro input={props.input} />
+                        <Dictionary input={props.input} />
+                        <HospitalList
+                            listTitle="의료기관 목록"
+                            input={props.input}
+                        />
+                    </div>
 
-    return (
-        <>
-        <div>
-            <Cover 
-            fileName="Cover1.png"
-            sectionHeader={sectionHeader}/>
-            <Intro
-            input={props.input}/>
-            <Dictionary
-            input={props.input} />
-            <HospitalList
-            listTitle='의료기관 목록'
-            input={props.input}/>
-                {/* <BarChart />
+                    {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}
-        </div>
-
-        </>
-
-    );
-};
+                </div>
+            </>
+        );
+    })
+);
 
 export default Section1;
