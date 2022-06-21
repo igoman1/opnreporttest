@@ -1,7 +1,8 @@
 import React from 'react';
 import './dictionary.css';
 
-const Dictionary = () => {
+const Dictionary = (props) => {
+    const dictData = props.input;
     return (
         <div className='dictionary-box'>
             <div className='dictionary-header'>용어 설명</div>
@@ -10,7 +11,7 @@ const Dictionary = () => {
                     <div className='dictionary-body-word'>매출액</div>
                     <div className='dictionary-body-meaning'>
                         <div>월간 카드 매출 합계를 의미합니다.</div>
-                        <div className='dictionary-body-explanation'>(심사평가원에 따르면 치과의 카드 매출은 보험급여가 포함된 실제 매출의 58%를 반영합니다)</div>
+                        <div className='dictionary-body-explanation'>(심사평가원에 따르면 치과의 카드 매출은 보험급여가 포함된 실제 매출의 {dictData.sales_reflection}를 반영합니다)</div>
                     </div>
                 </div>
 

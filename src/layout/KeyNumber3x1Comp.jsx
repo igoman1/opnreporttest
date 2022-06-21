@@ -3,12 +3,14 @@ import KeyNumberBoxLean from './../components/KeyNumberBoxLean';
 import '../components/key-number-box.css';
 import NumberTransformer from './../components/NumberTransformer';
 
-const KeyNumber3x1Comp = () => {
+const KeyNumber3x1Comp = (props) => {
+    const data=props.input
 
-    const sampleData= ['83246789','85691234','치열함']
-    const visualData=sampleData
-    visualData[0]=NumberTransformer(sampleData[0])
-    visualData[1]=NumberTransformer(sampleData[1])
+    // const sampleData= ['83246789','85691234','치열함']
+    const visualData=[]
+    visualData.push(data.all_hospital_average_profit)
+    visualData.push(data.new_hospital_average_profit)
+    visualData.push(data.competition_type)
 
     const titleSet= ['전체 의원 평균 매출액', '신규 의원 평균 매출액', '경쟁 유형']
 

@@ -12,7 +12,6 @@ const [resultData, setResultData] =useState({});
 
 const inputHandlerApp = (inputDataApp) => {
   setResultData(inputDataApp);
-    // console.log(inputDataApp);
   }
 
 

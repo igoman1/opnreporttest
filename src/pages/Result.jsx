@@ -28,17 +28,20 @@ const Result = (props) => {
   const cls = visible ? "visible" : "hidden";
 
   const finalData = props.data;
-  console.log(finalData);
   
     return (
         <>
         <div className="App">
             <header className={cls}><WhiteHeader /><Menu /></header>
         </div>
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
+        <Section1
+        input={finalData.intro} />
+        <Section2
+        input={finalData.market_analysis} />
+        <Section3
+        input={finalData.competitive_analysis} />
+        <Section4
+        input={finalData.user_analysis} />
 
         </>
     );

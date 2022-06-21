@@ -3,18 +3,20 @@ import CompBox from './CompBox';
 import CompBoxWhite from './CompBoxWhite';
 import './comp-box.css'
 
-const CompBoxCombinded = () => {
+const CompBoxCombinded = (props) => {
+    const data=props.input.competition_table
+    console.log(data[0])
     return (
         <div className='comp-box-combinded'>
             <CompBox
             name='매출액'
-            num='11억 5,708만원'/>
+            num={data.profit}/>
             <CompBox
             name='점유율'
-            num='11%'/>
+            num={data.acquisition_rate}/>
             <CompBoxWhite
             name='점유율 제곱'
-            num='0.02'/>
+            num={data.rate_squared}/>
         </div>
     );
 };

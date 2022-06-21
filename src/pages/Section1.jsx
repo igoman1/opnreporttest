@@ -2,16 +2,12 @@
 
 import React from 'react';
 import Cover from '../layout/Cover';
-import BarChart from '../components/BarChart';
-import LineChart from './../components/LineChart';
-import DonutChart from '../components/DonutChart';
 import Intro from '../layout/Intro';
 import Dictionary from '../layout/Dictionary';
 import HospitalList from '../layout/HospitalList';
-import OpenHere from '../components/OpenHere';
 
 
-const Section1 = () => {
+const Section1 = (props) => {
     const imagePath='cover1.png';
 
     const sectionHeader = {
@@ -25,11 +21,13 @@ const Section1 = () => {
             <Cover 
             fileName="Cover1.png"
             sectionHeader={sectionHeader}/>
-            <Intro/>
-            <Dictionary />
+            <Intro
+            input={props.input}/>
+            <Dictionary
+            input={props.input} />
             <HospitalList
-            listTitle='의료기관 목록'/>
-
+            listTitle='의료기관 목록'
+            input={props.input}/>
                 {/* <BarChart />
                 <LineChart />
                 <DonutChart /> */}

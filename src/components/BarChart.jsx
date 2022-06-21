@@ -6,6 +6,7 @@ const BarChart =(props) => {
     // yaxis:{
     //   show: false;
     // }
+    const data = props.input;
 
     const options = {
         chart: {

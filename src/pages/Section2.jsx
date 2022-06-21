@@ -2,12 +2,12 @@
 import React from 'react';
 import LineChart from '../components/LineChart';
 import Cover from '../layout/Cover';
-import SectionBody from '../layout/SectionBody';
+import SectionTwoBody from '../layout/SectionTwoBody';
 import KeyNumber2x3 from './../layout/KeyNumber2x3';
 import Card from './../components/Card';
 import BarChart from './../components/BarChart';
 
-const Section2 = () => {
+const Section2 = (props) => {
 
     const sectionHeader = {
         sectionTitle: "시장 분석",
@@ -20,37 +20,45 @@ const Section2 = () => {
             <Cover
             fileName='Cover2.png'
             sectionHeader={sectionHeader}/>
-            <KeyNumber2x3 />
-            <SectionBody/>
+            <KeyNumber2x3
+            input={props.input} />
+            <SectionTwoBody
+            input={props.input}/>
             <Card>
                 <LineChart
                 chartName='시장규모 단기 추세 (12개월)'
-                chartUnit='만원'/>
+                chartUnit='만원'
+                input={props.input}/>
             </Card>
             <Card>
                 <BarChart
                 chartName='시장규모 장기 추세 (3년)'
-                chartUnit='만원' />
+                chartUnit='만원' 
+                input={props.input}/>
             </Card>
             <Card>
                 <LineChart
                 chartName='의원 개수 단기 추세 (12개월)'
-                chartUnit='개'/>
+                chartUnit='개'
+                input={props.input}/>
             </Card>
             <Card>
                 <BarChart
                 chartName='의원 개수 장기 추세 (3년)'
-                chartUnit='개' />
+                chartUnit='개' 
+                input={props.input}/>
             </Card>
             <Card>
                 <LineChart
                 chartName='의원 1평당 매출액 단기 추세 (12개월)'
-                chartUnit='만원'/>
+                chartUnit='만원'
+                input={props.input}/>
             </Card>
             <Card>
                 <BarChart
                 chartName='의원 1평당 매출액 장기 추세 (3년)'
-                chartUnit='만원' />
+                chartUnit='만원' 
+                input={props.input}/>
             </Card>
 
         </div> 

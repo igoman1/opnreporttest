@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useMemo, useState} from 'react';
 import faker from 'faker';
 import Table from '../components/Table';
 import './hospital-list.css';
@@ -7,27 +7,34 @@ import Card from '../components/Card';
 faker.seed(100);
 
 const HospitalList = (props) => {
+    // console.log(props.input.hospital_table);
+
+//   const [hosData, setHosData] = useState([]);
+//  setHosData ([props.input.hospital_table]);
+//   console.log(hosData);
+
+
     const columns = useMemo(
         () => [
           {
             accessor: "name",
-            Header: "Name",
+            Header: "사업장명",
           },
           {
             accessor: "department",
-            Header: "Department",
+            Header: "진료과",
           },
           {
             accessor: "year",
-            Header: "Year",
+            Header: "개원년도",
           },
           {
             accessor: "area",
-            Header: "Area",
+            Header: "면적",
           },
           {
             accessor: "prof",
-            Header: "Prof",
+            Header: "전문의",
           },
         ],
         []
@@ -47,7 +54,6 @@ const HospitalList = (props) => {
         []
       );
 
-      const data1 = [10]
 
     return (
           <Card>
