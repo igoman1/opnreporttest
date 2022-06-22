@@ -11,3 +11,8 @@
     color: #ffffff;
     margin-bottom: 10px;
 }
+
+.menu a {
+    padding: 10px;
+    cursor: pointer;
+}

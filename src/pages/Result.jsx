@@ -36,13 +36,14 @@ const Result = (props) => {
                         .getElementById(`section-${i + 1}`)
                         .getBoundingClientRect().y;
                 });
+            console.log(targets);
             for (let i = 0; i < targets.length; i++) {
                 if (targets[i] < 0) {
                     setIsInCover(false);
 
                     continue;
                 }
-                if (0 <= targets[i] && targets[i] <= coverHeight) {
+                if (0 <= targets[i] && targets[i] + 1 <= coverHeight) {
                     setIsInCover(true);
                     break;
                 } else {
@@ -65,7 +66,7 @@ const Result = (props) => {
             <div className="App">
                 <header className={cls}>
                     {isInCover ? <WhiteHeader /> : <ColoredHeader />}
-                    <Menu />
+                    <Menu isInCover={isInCover} />
                 </header>
             </div>
             <Section1 ref={coverImage} input={finalData.intro} />

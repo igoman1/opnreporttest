@@ -1,3 +1,5 @@
+import "./Table.css";
+
 import React from "react";
 import { useTable } from "react-table";
 
@@ -7,7 +9,7 @@ const Table = ({ columns, data }) => {
 
     // console.log(getTableProps());
     return (
-        <table {...getTableProps()} style={{ width: "100%" }}>
+        <table className="table" {...getTableProps()} style={{ width: "100%" }}>
             <thead>
                 {headerGroups.map((headerGroup) => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
