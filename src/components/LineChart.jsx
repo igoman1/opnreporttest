@@ -5,7 +5,10 @@ import React, { Component, useMemo, useState } from "react";
 import Chart from "react-apexcharts";
 
 const LineChart = (props) => {
-    const data = props.input;
+    const rawData = props.input;
+    const chartValue = Object.values(rawData)
+    // console.log(chartValue)
+    // console.log(rawData)
     let fontSize = "10px";
     let offsetX = 0;
     let offsetY = 2;
@@ -86,10 +89,7 @@ const LineChart = (props) => {
     const series = [
         {
             name: "series-1",
-            data: [
-                680044, 773040, 754323, 680044, 773040, 754323, 680044, 773040,
-                754323, 680044, 773040, 754323,
-            ],
+            data: chartValue,
         },
     ];
     const style = {

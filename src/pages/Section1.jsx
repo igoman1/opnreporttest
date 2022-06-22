@@ -27,13 +27,10 @@ const Section1 = React.forwardRef((props, target) => {
                     <Dictionary input={props.input} />
                     <HospitalList
                         listTitle="의료기관 목록"
-                        input={props.input}
+                        input={props.input.hospital_table}
                     />
                 </div>
 
-                {/* <BarChart />
-                <LineChart />
-                <DonutChart /> */}
             </div>
         </>
     );

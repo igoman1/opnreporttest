@@ -9,6 +9,13 @@ import faker from "faker";
 faker.seed(100);
 
 const HospitalList = (props) => {
+    // const rawData = props.input
+    // const tmp = rawData[0]
+    // const dataColumn = Object.keys(tmp)
+    // console.log(rawData)
+    // console.log(dataColumn)
+   
+    
     const columns = useMemo(
         () => [
             {
@@ -20,7 +27,7 @@ const HospitalList = (props) => {
                 Header: "진료과",
             },
             {
-                accessor: "year",
+                accessor: "open_year",
                 Header: "개원년도",
             },
             {
@@ -34,6 +41,8 @@ const HospitalList = (props) => {
         ],
         []
     );
+
+    // const data = props.input
 
     const data = useMemo(
         () =>

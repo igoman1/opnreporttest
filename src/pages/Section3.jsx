@@ -32,20 +32,20 @@ const Section3 = (props) => {
                         chartName="의원 매출액 분포 (최근 1년간 월평균)"
                         chartUnit="만원"
                         chartNote="상위 10개 의원만 표시 중"
-                        input={props.input}
+                        input={props.input.competition_table}
                     />
                 </Card>
                 <Card>
                     <CompIndex input={props.input} />
                 </Card>
-                <HospitalList
+                {/* <HospitalList
                     listTitle="신규 의원 목록(최근24개월 간)"
                     input={props.input}
                 />
                 <HospitalList
                     listTitle="폐업 의원 목록(최근24개월 간)"
                     input={props.input}
-                />
+                /> */}
             </div>
         </>
     );

@@ -8,7 +8,10 @@ const BarChart = (props) => {
     // yaxis:{
     //   show: false;
     // }
-    const data = props.input;
+    const rawData = props.input;
+    // console.log(rawData)
+    const chartValue = Object.values(rawData)
+    // console.log(chartValue)
 
     const options = {
         chart: {
@@ -55,7 +58,7 @@ const BarChart = (props) => {
     const series = [
         {
             name: "series-1",
-            data: [680044, 773040, 754323],
+            data: chartValue,
         },
     ];
 

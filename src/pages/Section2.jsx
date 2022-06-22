@@ -29,42 +29,42 @@ const Section2 = (props) => {
                         <LineChart
                             chartName="시장규모 단기 추세 (12개월)"
                             chartUnit="만원"
-                            input={props.input}
+                            input={props.input['12m_trend_chart']}
                         />
                     </Card>
                     <Card>
                         <BarChart
                             chartName="시장규모 장기 추세 (3년)"
                             chartUnit="만원"
-                            input={props.input}
+                            input={props.input['3y_trend_chart']}
                         />
                     </Card>
                     <Card>
                         <LineChart
                             chartName="의원 개수 단기 추세 (12개월)"
                             chartUnit="개"
-                            input={props.input}
+                            input={props.input['hospital_count_chart']}
                         />
                     </Card>
                     <Card>
                         <BarChart
                             chartName="의원 개수 장기 추세 (3년)"
                             chartUnit="개"
-                            input={props.input}
+                            input={props.input['hospital_count_chart']}
                         />
                     </Card>
                     <Card>
                         <LineChart
                             chartName="의원 1평당 매출액 단기 추세 (12개월)"
                             chartUnit="만원"
-                            input={props.input}
+                            input={props.input['12m_trend_chart']}
                         />
                     </Card>
                     <Card>
                         <BarChart
                             chartName="의원 1평당 매출액 장기 추세 (3년)"
                             chartUnit="만원"
-                            input={props.input}
+                            input={props.input['3y_trend_chart']}
                         />
                     </Card>
                 </div>
