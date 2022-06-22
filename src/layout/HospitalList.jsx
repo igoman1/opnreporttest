@@ -51,8 +51,10 @@ const HospitalList = (props) => {
 
     return (
         <Card>
-            <div className="hospital-list-text">{props.listTitle}</div>
-            <Table columns={columns} data={data} />
+            <div className="table-wrapper">
+                <div className="hospital-list-text">{props.listTitle}</div>
+                <Table columns={columns} data={data} />
+            </div>
         </Card>
     );
 };

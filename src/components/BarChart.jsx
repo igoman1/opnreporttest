@@ -42,6 +42,7 @@ const BarChart = (props) => {
         },
         plotOptions: {
             bar: {
+                barWidth: "70%",
                 horizontal: false,
                 dataLabels: {
                     position: "top",

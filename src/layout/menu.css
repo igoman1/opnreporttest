@@ -1,12 +1,13 @@
 .menu {
     display: flex;
     justify-content: space-evenly;
-    font-family: 'Noto Sans';
+    font-family: "Noto Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-
-    color: #FFFFFF;
+    max-width: 900px;
+    box-sizing: border-box;
+    color: #ffffff;
     margin-bottom: 10px;
 }

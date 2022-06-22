@@ -2,10 +2,12 @@
     height: 50px;
     /* position: fixed; */
     /* top: 0px; */
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 900px;
+    box-sizing: border-box;
 }
 
 .chevron-left {
@@ -14,17 +16,17 @@
     margin-right: 7px;
 }
 
-.previous-page-text{
-    font-family: 'Noto Sans';
+.previous-page-text {
+    font-family: "Noto Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     /* line-height: 140%; */
 
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.previous-page-button{
+.previous-page-button {
     display: flex;
     align-items: center;
 }
@@ -34,12 +36,12 @@
     height: 21px;
 }
 
-.header-description{
-    font-family: 'Noto Sans';
+.header-description {
+    font-family: "Noto Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     /* line-height: 140%; */
 
-    color: #FFFFFF;
+    color: #ffffff;
 }

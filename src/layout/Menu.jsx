@@ -1,17 +1,20 @@
-import React from 'react';
 import "./menu.css";
 
-const menuItems=['개요','시장분석','경쟁분석','고객분석'];
+import { Link } from "react-scroll";
+import React from "react";
+
+const menuItems = ["개요", "시장분석", "경쟁분석", "고객분석"];
 
 const Menu = () => {
     return (
-        <div className='menu'>
-            
-            {menuItems.map((item)=>{
-                return <div>{item}</div>
+        <div className="menu">
+            {menuItems.map((item, i) => {
+                return (
+                    <Link smooth={true} to={`section-${i + 1}`}>
+                        {item}
+                    </Link>
+                );
             })}
-            
-
         </div>
     );
 };

@@ -1,13 +1,14 @@
-.hospital-list-text{
-    
+.hospital-list-text {
     /* MD-B */
 
-font-family: 'Noto Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
 
-
-color: #3955B4;
+    color: #3955b4;
 }
 
+.table-wrapper {
+    overflow: scroll;
+}

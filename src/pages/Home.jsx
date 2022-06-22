@@ -1,10 +1,8 @@
 import "./home.css";
 
-import React, { useState } from "react";
-
 import ColoredHeader from "../layout/ColoredHeader";
 import InputForm from "../components/InputForm";
-import WhiteHeader from "../layout/WhiteHeader";
+import React from "react";
 
 const Home = (props) => {
     return (

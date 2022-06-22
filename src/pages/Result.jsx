@@ -59,7 +59,7 @@ const Result = (props) => {
     const cls = visible ? "visible" : "hidden";
 
     const finalData = props.data;
-
+    console.log(finalData);
     return (
         <>
             <div className="App">
