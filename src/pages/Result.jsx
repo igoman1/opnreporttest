@@ -59,6 +59,8 @@ const Result = (props) => {
     const cls = visible ? "visible" : "hidden";
 
     const finalData = props.data;
+    console.log(finalData);
+    console.log(finalData.intro);
 
     return (
         <>
