@@ -42,7 +42,7 @@ const Section4 = (props) => {
                         input={props.input.customer_profit_ratio}
                     />
                 </Card>
-                <Card>
+                {/* <Card>
                     <LineChart
                         chartName="객단가 단기 추세 (12개월)"
                         chartUnit="원"
@@ -55,7 +55,7 @@ const Section4 = (props) => {
                         chartUnit="원"
                         input={props.input.average_profit_per_customer_3y_chart}
                     />
-                </Card>
+                </Card> */}
             </div>
         </>
     );

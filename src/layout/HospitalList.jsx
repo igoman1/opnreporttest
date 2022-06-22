@@ -9,36 +9,15 @@ import faker from "faker";
 faker.seed(100);
 
 const HospitalList = (props) => {
-    // const rawData = props.input
-    // const tmp = rawData[0]
-    // const dataColumn = Object.keys(tmp)
+    const rawData = props.list
+    const header = props.header
     // console.log(rawData)
+    // console.log(header)
     // console.log(dataColumn)
    
     
     const columns = useMemo(
-        () => [
-            {
-                accessor: "name",
-                Header: "사업장명",
-            },
-            {
-                accessor: "department",
-                Header: "진료과",
-            },
-            {
-                accessor: "open_year",
-                Header: "개원년도",
-            },
-            {
-                accessor: "area",
-                Header: "면적",
-            },
-            {
-                accessor: "prof",
-                Header: "전문의",
-            },
-        ],
+        () => header,
         []
     );
 
@@ -46,14 +25,14 @@ const HospitalList = (props) => {
 
     const data = useMemo(
         () =>
-            Array(10)
-                .fill()
-                .map(() => ({
-                    name: faker.name.lastName(),
-                    department: faker.internet.email(),
-                    year: faker.phone.phoneNumber(),
-                    area: faker.date.month(),
-                    prof: faker.name.firstName(),
+            // Array(10)
+            //     .fill()
+                rawData.map((item) => ({
+                    name: item.name,
+                    department: item.department,
+                    year: item.open_year,
+                    area: item.area,
+                    prof: item.prof,
                 })),
         []
     );

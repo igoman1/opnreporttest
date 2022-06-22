@@ -13,6 +13,7 @@ const Section1 = React.forwardRef((props, target) => {
         sectionTitle: "개요",
         sectionList: ["의료기관 목록", "개원여기 분석 결과"],
     };
+    console.log(props.input)
 
     return (
         <>
@@ -25,10 +26,11 @@ const Section1 = React.forwardRef((props, target) => {
                 <div id="section-1">
                     <Intro input={props.input} />
                     <Dictionary input={props.input} />
-                    <HospitalList
+                    {/* <HospitalList
                         listTitle="의료기관 목록"
-                        input={props.input.hospital_table}
-                    />
+                        list={props.input.hospital_table}
+                        header={props.input.hospital_headers}
+                    /> */}
                 </div>
 
             </div>

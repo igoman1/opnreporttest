@@ -6,9 +6,23 @@ import Chart from "react-apexcharts";
 
 const LineChart = (props) => {
     const rawData = props.input;
-    const chartValue = Object.values(rawData)
+    const xLabel = [];
+    const chartValue =[];
+    // const chartCount =[];
+ 
+    console.log(rawData)
+    rawData.map((item)=>{
+        xLabel.push(item.date);
+        chartValue.push(item.value);
+        // chartCount.push(item.count);
+    })
     // console.log(chartValue)
-    // console.log(rawData)
+    // console.log(chartCount)
+    // console.log(xLabel)
+    // const chartData =[].concat(chartValue,chartCount);
+    // console.log(chartData);
+
+
     let fontSize = "10px";
     let offsetX = 0;
     let offsetY = 2;
@@ -62,20 +76,7 @@ const LineChart = (props) => {
                     cssClass: "apexcharts-xaxis-label",
                 },
             },
-            categories: [
-                "21년 5월",
-                "6월",
-                "7월",
-                "8월",
-                "9월",
-                "10월",
-                "11월",
-                "12월",
-                "22년 1월",
-                "2월",
-                "3월",
-                "4월",
-            ],
+            categories: xLabel,
         },
         yaxis: {
             labels: {

@@ -5,7 +5,7 @@ const Table = ({ columns, data }) => {
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
         useTable({ columns, data });
 
-    console.log(getTableProps());
+    // console.log(getTableProps());
     return (
         <table {...getTableProps()} style={{ width: "100%" }}>
             <thead>

@@ -6,22 +6,26 @@ import CompBoxWhite from './../components/CompBoxWhite';
 import CompBar from './../components/CompBar';
 
 const CompIndex = (props) => {
+    const residualCount='0개';
+    const residualVal='0.00';
+    const sumVal='0.10';
+
     return (
         <div>
             <div className="comp-index-title">의원별 점유율과 경쟁 지표</div>
             <CompBoxCombinded
-            input={props.input.competition_table}/>
+            input={props.input}/>
             <div className="comp-index-sum">
-                <span className="comp-index-sum-text">그외 92개 의원</span>
+                <span className="comp-index-sum-text">그외 {residualCount} 의원</span>
             <CompBoxWhite
             name='점유율 제곱'
-            num='0.10' />
+            num={residualVal} />
             </div>
             <div className="comp-index-bottom">
             <CompBar/>
             <CompBoxWhite
             name='경쟁 지표 (점유율 제곱합)'
-            num='0.20' />
+            num={sumVal} />
             </div>
 
         </div>

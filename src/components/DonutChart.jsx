@@ -5,6 +5,13 @@ import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
 const DonutChart = (props) => {
+    const rawData=props.input
+    console.log(rawData)
+    // const series = Object.values(rawData);
+    // console.log(series)
+    const series=[1,2,3,4,5]
+
+
     const options = {
         chart: {
             type: "donut",
@@ -54,8 +61,7 @@ const DonutChart = (props) => {
             },
         },
     };
-    const series = [44, 55, 41, 17, 15];
-    const labels = ["A", "B", "C", "D", "E"];
+
 
     return (
         <div className="chart-wrapper">

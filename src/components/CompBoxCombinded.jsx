@@ -7,7 +7,7 @@ import React from "react";
 const CompBoxCombinded = (props) => {
     const rawData = props.input;
     console.log(rawData)
-    const data=rawData.slice(0,5)
+    const data=rawData.slice(0,10)
     console.log(data)
 
     return (

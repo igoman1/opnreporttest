@@ -9,9 +9,15 @@ const BarChart = (props) => {
     //   show: false;
     // }
     const rawData = props.input;
-    // console.log(rawData)
-    const chartValue = Object.values(rawData)
-    // console.log(chartValue)
+    console.log(rawData)
+    const xLabel = [];
+    const chartValue =[];
+    rawData.map((item)=>{
+        xLabel.push(item.date);
+        chartValue.push(item.value);
+    })
+    
+    console.log(chartValue)
 
     const options = {
         chart: {
@@ -26,7 +32,7 @@ const BarChart = (props) => {
             axisTicks: {
                 show: false,
             },
-            categories: ["2020년", "2021년", "2022년"],
+            categories: xLabel,
         },
         yaxis: {
             labels: {

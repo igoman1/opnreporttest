@@ -5,6 +5,7 @@ import './section-body.css';
 const SectionThreeBody = (props) => {
     
     const data=props.input
+    console.log(data)
 
     return (
         <div className='section-body'>
