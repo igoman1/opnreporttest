@@ -36,7 +36,6 @@ const Result = (props) => {
                         .getElementById(`section-${i + 1}`)
                         .getBoundingClientRect().y;
                 });
-            // console.log(targets);
             for (let i = 0; i < targets.length; i++) {
                 if (targets[i] < 0) {
                     setIsInCover(false);
@@ -60,7 +59,6 @@ const Result = (props) => {
     const cls = visible ? "visible" : "hidden";
 
     const finalData = props.data;
-    // console.log(finalData);
     return (
         <>
             <div className="App">
