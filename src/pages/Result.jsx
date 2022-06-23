@@ -70,9 +70,9 @@ const Result = (props) => {
                 </header>
             </div>
             <Section1 ref={coverImage} input={finalData.intro} />
-            {/* <Section2 input={finalData.market_analysis} />
-            <Section3 input={finalData.competitive_analysis} />
-            <Section4 input={finalData.user_analysis} /> */}
+            <Section2 input={finalData.market_analysis} />
+            {/* <Section3 input={finalData.competitive_analysis} /> */}
+            {/* <Section4 input={finalData.user_analysis} /> */}
         </>
     );
 };

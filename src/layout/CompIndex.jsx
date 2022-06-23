@@ -6,10 +6,14 @@ import CompBoxWhite from './../components/CompBoxWhite';
 import CompBar from './../components/CompBar';
 
 const CompIndex = (props) => {
-    const residualCount=0;
-    console.log(residualCount)
-    const residualVal=0;
-    const sumVal=0;
+    const compTable=props.input.competition_top10_table;
+    const residual=props.input.competition_rest_info;
+    console.log(compTable)
+    console.log(residual)
+    console.log(residual[0])
+    let residualCount =0;
+    let residualVal=0;
+    let sumVal=0;
 
     return (
         <div>

@@ -13,7 +13,7 @@ const BarChart = (props) => {
     const xLabel = [];
     const chartValue =[];
     rawData.map((item)=>{
-        xLabel.push(item.date);
+        xLabel.push(item.class);
         chartValue.push(item.value);
     })
     

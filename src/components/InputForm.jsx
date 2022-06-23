@@ -17,8 +17,8 @@ import { useNavigate } from "react-router-dom";
 //         address_sido_sigungu: "서울특별시 강남구",
 //         address_realated_dongs: "신사동, 압구정동",
 //         hospital_count: 9,
-//         big_hospital_count: 1,
-//         big_hospital_departments: "치과병원 1개",
+//         big_hospital_count: 0,
+//         big_hospital_departments: "",
 //         sales_reflection: "46%",
 //         hospital_table: [
 //             {
@@ -86,13 +86,7 @@ import { useNavigate } from "react-router-dom";
 //             },
 //         ],
 //         hospital_top10_table: [],
-//         big_hospital_table: [
-//             {name: '굿라이프치과병원', 
-//             department: '치과병원', 
-//             open_year: 2011, 
-//             area: '149평', 
-//             prof: '치과교정과 1명, 치과보철과 1명'}
-//           ],
+//         big_hospital_table: [],
 //         hospital_headers: [],
 //     },
 //     market_analysis: {
@@ -330,8 +324,8 @@ const InputForm = (props) => {
 
     const locationOptions = [
         {
-            value: "경기도 파주시 운정1동",
-            label: "경기도 파주시 운정1동",
+            value: "서울특별시 강남구 신사동",
+            label: "서울특별시 강남구 신사동",
         },
         {
             value: "서울특별시 강남구 논현1동",

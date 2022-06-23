@@ -116,7 +116,6 @@ const Intro = (props) => {
                 오픈닥터의 개원 입지 분석 시스템에서 {introData.address_dong} 내 분석 대상 의원은 총 {introData.hospital_count}개 입니다.
                 또한 병원급 의료기관은 
                 {introData.big_hospital_count===0 ? <span> 없습니다.</span> : <span> {introData.big_hospital_count}개 존재하며, {introData.big_hospital_departments}가 있습니다.</span>}
-                {/* 병원 개수에 따라 조건부 문 작성 필요함 */}
                 <div className='intro-long-line'></div>
             </div>
             <div className='intro-guide-text-bot'>분석에 활용되는 진료과</div>

@@ -12,16 +12,9 @@ const LineChart = (props) => {
  
     console.log(rawData)
     rawData.map((item)=>{
-        xLabel.push(item.date);
+        xLabel.push(item.class);
         chartValue.push(item.value);
-        // chartCount.push(item.count);
     })
-    // console.log(chartValue)
-    // console.log(chartCount)
-    // console.log(xLabel)
-    // const chartData =[].concat(chartValue,chartCount);
-    // console.log(chartData);
-
 
     let fontSize = "10px";
     let offsetX = 0;

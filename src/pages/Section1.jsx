@@ -29,8 +29,7 @@ const Section1 = React.forwardRef((props, target) => {
                     {/* <HospitalList
                         listTitle="의료기관 목록"
                         list={props.input.hospital_table}
-                        header={props.input.hospital_headers}
-                    /> */}
+                        header={props.input.hospital_headers} */}
                 </div>
 
             </div>
