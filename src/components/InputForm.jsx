@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import BottomButton from "./../components/BottomButton";
 import Dropdown from "./Dropdown";
 import Loader from "./Lodaer";
+import ProgressBar from "./ProgressBar";
 import { inputHandler } from "../pages/Home";
 import { useNavigate } from "react-router-dom";
 
@@ -7474,6 +7475,7 @@ const InputForm = (props) => {
         //     });
         // };
         const resp = await fetch(
+            // `https://opn-server2.herokuapp.com/report/?department=${department}&location=${location}`
             `http://localhost:8000/report/?department=${department}&location=${location}`
         );
         const respJSON = await resp.json();
@@ -7489,6 +7491,7 @@ const InputForm = (props) => {
 
     return (
         <div>
+            <ProgressBar />
             {isLoading ? (
                 <Loader type="spin" color="RGB 값" message="분석중입니다." />
             ) : (
