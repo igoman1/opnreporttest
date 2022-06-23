@@ -6,13 +6,13 @@ import React from "react";
 
 const CompBoxCombinded = (props) => {
     const rawData = props.input;
-    console.log(rawData)
-    const data=rawData.slice(0,10)
-    console.log(data)
+    // console.log(rawData)
+    // const data=rawData.slice(0,10)
+    // console.log(data)
 
     return (
         <div>
-        {data.map((item)=>{
+        {rawData.map((item)=>{
             return <div className="comp-box-combinded">
             <CompBox name="매출액" num={item.profit} />
             <CompBox name="점유율" num={item.acquisition_rate} />

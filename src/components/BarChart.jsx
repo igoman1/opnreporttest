@@ -9,7 +9,7 @@ const BarChart = (props) => {
     //   show: false;
     // }
     const rawData = props.input;
-    console.log(rawData)
+    // console.log(rawData)
     const xLabel = [];
     const chartValue =[];
     rawData.map((item)=>{
@@ -17,7 +17,7 @@ const BarChart = (props) => {
         chartValue.push(item.value);
     })
     
-    console.log(chartValue)
+    // console.log(chartValue)
 
     const options = {
         chart: {

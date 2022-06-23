@@ -2,7 +2,8 @@ import BarChart from "./../components/BarChart";
 import Card from "./../components/Card";
 import CompIndex from "./../layout/CompIndex";
 import Cover from "./../layout/Cover";
-import HospitalList from "../layout/HospitalList";
+import NewHospitalList from "../layout/NewHospitalList";
+import OldHospitalList from "../layout/OldHospitalList";
 import KeyNumber3x1Comp from "./../layout/KeyNumber3x1Comp";
 // 경쟁분석 section
 import React from "react";
@@ -18,6 +19,7 @@ const Section3 = (props) => {
             "폐업 의원 목록 (최근 24개월 간)",
         ],
     };
+    // console.log(props.input)
 
     return (
         <>
@@ -38,16 +40,14 @@ const Section3 = (props) => {
                 <Card>
                     <CompIndex input={props.input} />
                 </Card>
-                {/* <HospitalList
+                <NewHospitalList
                     listTitle="신규 의원 목록(최근24개월 간)"
-                    list={props.new_hospital_table}
-                    header={props.new_hospital_headers}
+                    list={props.input.new_hospital_table}
                 />
-                <HospitalList
+                <OldHospitalList
                     listTitle="폐업 의원 목록(최근24개월 간)"
-                    list={props.closed_hospital_table}
-                    header={props.input.closed_hospital_headers}
-                /> */}
+                    list={props.input.closed_hospital_table}
+                />
             </div>
         </>
     );

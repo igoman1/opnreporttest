@@ -8,9 +8,9 @@ import faker from "faker";
 
 // faker.seed(100);
 
-const HospitalList = (props) => {
+const NewHospitalList = (props) => {
     const rawData = props.list
-    // const header = props.header
+    // const header = pro ps.header
     // console.log(rawData)
     // console.log(header)
     // console.log(dataColumn)
@@ -18,18 +18,19 @@ const HospitalList = (props) => {
     
     const columns = useMemo(
         () => [
-            {
+          {
+            accessor: "open_date",
+            Header: "개업일자",
+          },
+
+          {
                 accessor: "name",
-                Header: "사업장명",
+                Header: "상호명",
               },
-              {
-                accessor: "department",
-                Header: "진료과",
-              },
-              {
-                accessor: "open_year",
-                Header: "개원년도",
-              },
+              // {
+              //   accessor: "department",
+              //   Header: "진료과",
+              // },
               {
                 accessor: "area",
                 Header: "면적",
@@ -49,9 +50,9 @@ const HospitalList = (props) => {
             // Array(10)
             //     .fill()
                 rawData.map((item) => ({
-                    name: item.name,
-                    department: item.department,
-                    year: item.open_year,
+                    name: item.hospital_name,
+                    open_date: item.open_date,
+                    // department: item.department,
                     area: item.area,
                     prof: item.prof,
                 })),
@@ -69,4 +70,4 @@ const HospitalList = (props) => {
     );
 };
 
-export default HospitalList;
+export default NewHospitalList;

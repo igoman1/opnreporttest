@@ -441,13 +441,13 @@ const InputForm = (props) => {
     };
 
     const analyze = async () => {
-        const mock = () => {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve(tempRespJSON);
-                }, 2000);
-            });
-        };
+        // const mock = () => {
+        //     return new Promise((resolve) => {
+        //         setTimeout(() => {
+        //             resolve(tempRespJSON);
+        //         }, 2000);
+        //     });
+        // };
         const resp = await fetch(
             `http://localhost:8000/report/?department=${department}&location=${location}`
         );

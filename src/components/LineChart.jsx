@@ -10,7 +10,7 @@ const LineChart = (props) => {
     const chartValue =[];
     // const chartCount =[];
  
-    console.log(rawData)
+    // console.log(rawData)
     rawData.map((item)=>{
         xLabel.push(item.class);
         chartValue.push(item.value);
@@ -19,7 +19,7 @@ const LineChart = (props) => {
     let fontSize = "10px";
     let offsetX = 0;
     let offsetY = 2;
-    console.log("render");
+    // console.log("render");
     // Check if the media query is true
     if (window.matchMedia("(min-width: 768px)").matches) {
         // Then trigger an alert

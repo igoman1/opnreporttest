@@ -8,9 +8,9 @@ import faker from "faker";
 
 // faker.seed(100);
 
-const HospitalList = (props) => {
+const OldHospitalList = (props) => {
     const rawData = props.list
-    // const header = props.header
+    // const header = pro ps.header
     // console.log(rawData)
     // console.log(header)
     // console.log(dataColumn)
@@ -19,25 +19,25 @@ const HospitalList = (props) => {
     const columns = useMemo(
         () => [
             {
+                accessor: "open_date",
+                Header: "개업일자",
+              },
+              {
+                accessor: "closed_date",
+                Header: "폐업일자",
+              },
+            {
                 accessor: "name",
-                Header: "사업장명",
-              },
-              {
-                accessor: "department",
-                Header: "진료과",
-              },
-              {
-                accessor: "open_year",
-                Header: "개원년도",
+                Header: "상호명",
               },
               {
                 accessor: "area",
                 Header: "면적",
               },
-              {
-                accessor: "prof",
-                Header: "전문의",
-              },
+            //   {
+            //     accessor: "prof",
+            //     Header: "전문의",
+            //   },
             ],
         []
     );
@@ -49,11 +49,11 @@ const HospitalList = (props) => {
             // Array(10)
             //     .fill()
                 rawData.map((item) => ({
-                    name: item.name,
-                    department: item.department,
-                    year: item.open_year,
+                    open_date: item.open_date,
+                    closed_date: item.closed_date,
+                    name: item.hospital_name,
                     area: item.area,
-                    prof: item.prof,
+                    // prof: item.prof,
                 })),
         []
     );
@@ -69,4 +69,4 @@ const HospitalList = (props) => {
     );
 };
 
-export default HospitalList;
+export default OldHospitalList;

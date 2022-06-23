@@ -7,15 +7,23 @@ import Chart from "react-apexcharts";
 const DonutChart = (props) => {
     const rawData=props.input
     console.log(rawData)
-    // const series = Object.values(rawData);
-    // console.log(series)
-    const series=[1,2,3,4,5]
+    var chartData = [];
+    var chartLabel= [];
+    rawData.map((item)=>{
+        chartData.push(item.value);
+        chartLabel.push(item.class);
+    })
+    console.log(chartData)
+
+    const series=chartData
+    const labels=chartLabel
 
 
     const options = {
         chart: {
             type: "donut",
         },
+        labels : labels,
         fill: {
             colors: [
                 "#4277d9f1",

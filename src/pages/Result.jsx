@@ -36,7 +36,7 @@ const Result = (props) => {
                         .getElementById(`section-${i + 1}`)
                         .getBoundingClientRect().y;
                 });
-            console.log(targets);
+            // console.log(targets);
             for (let i = 0; i < targets.length; i++) {
                 if (targets[i] < 0) {
                     setIsInCover(false);
@@ -71,8 +71,8 @@ const Result = (props) => {
             </div>
             <Section1 ref={coverImage} input={finalData.intro} />
             <Section2 input={finalData.market_analysis} />
-            {/* <Section3 input={finalData.competitive_analysis} /> */}
-            {/* <Section4 input={finalData.user_analysis} /> */}
+            <Section3 input={finalData.competitive_analysis} />
+            <Section4 input={finalData.user_analysis} />
         </>
     );
 };

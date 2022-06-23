@@ -32,31 +32,31 @@ const Section4 = (props) => {
                     <DonutChart
                         title="성연령대별 매출 분포"
                         header="성별분포"
-                        input={props.input.male_age_ratio}
+                        input={props.input.sex_distribution_chart}
                     />
-                    <DonutChart header="남성 연령 분포" input={props.input.male_age_ratio} />
-                    <DonutChart header="여성 연령 분포" input={props.input.female_age_ratio} />
+                    <DonutChart header="남성 연령 분포" input={props.input.male_age_distribution_chart} />
+                    <DonutChart header="여성 연령 분포" input={props.input.female_age_distribution_chart} />
                 </Card>
                 <Card>
                     <DonutChart
                         title="소득수준별 매출 분포"
-                        input={props.input.customer_profit_ratio}
+                        input={props.input.customer_profit_distribution_chart}
                     />
                 </Card>
-                {/* <Card>
+                <Card>
                     <LineChart
                         chartName="객단가 단기 추세 (12개월)"
                         chartUnit="원"
-                        input={props.input.average_profit_per_customer_12m_chart}
+                        input={props.input.average_profit_per_customer_short_chart}
                     />
                 </Card>
                 <Card>
                     <BarChart
                         chartName="객단가 장기 추세 (3년)"
                         chartUnit="원"
-                        input={props.input.average_profit_per_customer_3y_chart}
+                        input={props.input.average_profit_per_customer_long_chart}
                     />
-                </Card> */}
+                </Card>
             </div>
         </>
     );

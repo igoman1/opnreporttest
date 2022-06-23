@@ -8,7 +8,18 @@
 
     color: #3955b4;
 }
+.hospital-list-header{
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+/* identical to box height, or 20px */
 
+
+color: #3955B4;
+margin-top:17px;
+
+}
 .table-wrapper {
     overflow: scroll;
 }
