@@ -19,7 +19,7 @@ const WhiteHeader = () => {
                     <img className="logo-white" src={logoWhite} />
                 </div>
                 <div className="child child-right">
-                    <span className="header-description">지역 분석 리포트</span>
+                    <span className="header-description">분석 리포트</span>
                 </div>
             </div>
         </>

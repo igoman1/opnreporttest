@@ -27,7 +27,7 @@ const ColoredHeader = () => {
             </div>
             <div className="child child-right">
                 <span className="colored-header-description">
-                    지역 분석 리포트
+                    분석 리포트
                 </span>
             </div>
         </div>

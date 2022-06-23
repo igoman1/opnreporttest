@@ -6,14 +6,14 @@ import Chart from "react-apexcharts";
 
 const DonutChart = (props) => {
     const rawData=props.input
-    console.log(rawData)
+    // console.log(rawData)
     var chartData = [];
     var chartLabel= [];
     rawData.map((item)=>{
         chartData.push(item.value);
         chartLabel.push(item.class);
     })
-    console.log(chartData)
+    // console.log(chartData)
 
     const series=chartData
     const labels=chartLabel

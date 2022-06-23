@@ -10,6 +10,7 @@ import faker from "faker";
 
 const HospitalList = (props) => {
     const rawData = props.list
+    console.log(props.list)
     // const header = props.header
     // console.log(rawData)
     // console.log(header)
@@ -51,7 +52,7 @@ const HospitalList = (props) => {
                 rawData.map((item) => ({
                     name: item.name,
                     department: item.department,
-                    year: item.open_year,
+                    open_year: item.open_year,
                     area: item.area,
                     prof: item.prof,
                 })),
