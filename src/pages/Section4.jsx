@@ -19,6 +19,7 @@ const Section4 = (props) => {
             "객단가 장기 추세 (3년)",
         ],
     };
+    console.log(props.input)
     return (
         <>
             <div>
