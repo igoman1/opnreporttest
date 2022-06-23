@@ -4,7 +4,21 @@
 }
 
 .table tr th {
+    width: 100%;
     padding: 20px;
+}
+
+table {
+    min-width: 600px;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+}
+
+tr td {
+    width: 100%;
 }
 
 .table td {
