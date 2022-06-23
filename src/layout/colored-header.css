@@ -29,3 +29,12 @@
     font-weight: 700;
     font-size: 16px;
 }
+
+.child {
+    width: 33%;
+}
+
+.child .img {
+    display: flex;
+    justify-content: center;
+}

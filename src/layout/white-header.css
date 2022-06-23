@@ -45,3 +45,12 @@
 
     color: #ffffff;
 }
+
+.child {
+    width: 33%;
+}
+
+.child .img {
+    display: flex;
+    justify-content: center;
+}

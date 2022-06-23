@@ -11,17 +11,25 @@ const ColoredHeader = () => {
     return (
         <div className="color-header">
             {location.pathname === "/" ? (
-                <div style={{ visibility: "hidden" }}>.</div>
+                <div className="child" style={{ visibility: "hidden" }}>
+                    .
+                </div>
             ) : (
-                <div className="previous-page-button">
+                <div className="previous-page-button child">
                     <img className="chevron-left" src={chevronLeft} />
                     <Link to="/" className="color-previous-page-text">
                         돌아가기
                     </Link>
                 </div>
             )}
-            <img className="logo-colored" src={LogoColored} />
-            <span className="colored-header-description">지역 분석 리포트</span>
+            <div className="child img">
+                <img className="logo-colored" src={LogoColored} />
+            </div>
+            <div className="child">
+                <span className="colored-header-description">
+                    지역 분석 리포트
+                </span>
+            </div>
         </div>
     );
 };
