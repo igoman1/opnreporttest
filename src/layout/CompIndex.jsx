@@ -6,9 +6,10 @@ import CompBoxWhite from './../components/CompBoxWhite';
 import CompBar from './../components/CompBar';
 
 const CompIndex = (props) => {
-    const residualCount='0개';
-    const residualVal='0.00';
-    const sumVal='0.10';
+    const residualCount=0;
+    console.log(residualCount)
+    const residualVal=0;
+    const sumVal=0;
 
     return (
         <div>
