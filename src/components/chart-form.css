@@ -2,7 +2,7 @@
     font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 14px;
+font-size: 18px;
 /* identical to box height, or 20px */
 color: #3955B4;
 }
@@ -11,7 +11,7 @@ color: #3955B4;
     font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 10px;
+font-size: 14px;
 /* identical to box height, or 14px */
 color: #000000;
 
@@ -34,7 +34,7 @@ opacity: 0.5;
     font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 10px;
+font-size: 14px;
 /* identical to box height, or 14px */
 color: #000000;
 
@@ -49,7 +49,7 @@ opacity: 0.5;
     font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 14px;
+font-size: 18px;
 /* identical to box height, or 20px */
 color: #3955B4;
 margin-bottom:10px;
@@ -58,7 +58,7 @@ margin-bottom:10px;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;  
+    font-size: 16px;  
     color: #8F8F8F;
     
 }

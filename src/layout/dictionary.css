@@ -29,8 +29,8 @@ opacity: 0.3;
     font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 12px;
-width: 50px;
+font-size: 14px;
+width: 10em;
 color: #3955B4;
 margin-right:10px;
 }
@@ -39,7 +39,7 @@ margin-right:10px;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
     
     color: #000000;
 }
@@ -49,7 +49,7 @@ margin-right:10px;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 12px;
     color: #000000;
     margin-top:6px;
 }

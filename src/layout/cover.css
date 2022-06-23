@@ -14,9 +14,10 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     margin-left: 16px;
     padding:16px;
+    margin-bottom: 20px;
 
 
     color: white;
@@ -27,12 +28,12 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     margin-left: 36px;
     
     color:white;
 }
 
 .section-list-item{
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }

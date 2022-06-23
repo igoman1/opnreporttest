@@ -41,11 +41,11 @@ const Section3 = (props) => {
                     <CompIndex input={props.input} />
                 </Card>
                 <NewHospitalList
-                    listTitle="신규 의원 목록(최근24개월 간)"
+                    listTitle="신규 의원 목록 (최근24개월 간)"
                     list={props.input.new_hospital_table}
                 />
                 <OldHospitalList
-                    listTitle="폐업 의원 목록(최근24개월 간)"
+                    listTitle="폐업 의원 목록 (최근24개월 간)"
                     list={props.input.closed_hospital_table}
                 />
             </div>

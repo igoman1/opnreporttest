@@ -93,7 +93,7 @@ const LineChart = (props) => {
         <div className="chart-wrapper">
             <div className="chart-header">
                 <div className="chart-name">{props.chartName}</div>
-                <div className="chart-unit" style={style}>
+                <div className="chart-unit">
                     단위: {props.chartUnit}
                 </div>
             </div>
