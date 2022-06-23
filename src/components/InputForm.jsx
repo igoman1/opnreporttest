@@ -7467,19 +7467,10 @@ const InputForm = (props) => {
     };
 
     const analyze = async () => {
-        // const mock = () => {
-        //     return new Promise((resolve) => {
-        //         setTimeout(() => {
-        //             resolve(tempRespJSON);
-        //         }, 2000);
-        //     });
-        // };
         const resp = await fetch(
-            // `https://opn-server2.herokuapp.com/report/?department=${department}&location=${location}`
-            `http://localhost:8000/report/?department=${department}&location=${location}`
+            `https://opn-server.herokuapp.com/report/?department=${department}&location=${location}`
         );
         const respJSON = await resp.json();
-        // const respJSON = await mock();
 
         setFetchedData(respJSON);
         props.input(respJSON);
