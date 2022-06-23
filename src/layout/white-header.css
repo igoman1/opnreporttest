@@ -50,7 +50,17 @@
     width: 33%;
 }
 
-.child .img {
+.child-left {
+    display: flex;
+    justify-content: start;
+}
+
+.child-center {
     display: flex;
     justify-content: center;
+}
+
+.child-right {
+    display: flex;
+    justify-content: end;
 }
