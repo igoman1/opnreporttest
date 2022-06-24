@@ -1,5 +1,5 @@
 {
-  "homepage": "git",
+  "homepage": "https://igoman1.github.io/igoman1.github.io",
   "name": "opnreport",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,6 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [
