@@ -10,7 +10,7 @@ const ColoredHeader = () => {
     let location = useLocation();
     return (
         <div className="color-header">
-            {location.pathname === "/" ? (
+            {/* {location.pathname === "/" ? (
                 <div className="child" style={{ visibility: "hidden" }}>
                     .
                 </div>
@@ -21,7 +21,7 @@ const ColoredHeader = () => {
                         돌아가기
                     </Link>
                 </div>
-            )}
+            )} */}
             <div className="child child-center ">
                 <img className="logo-colored" src={LogoColored} />
             </div>

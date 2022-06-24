@@ -9,12 +9,12 @@ const WhiteHeader = () => {
     return (
         <>
             <div className="white-header">
-                <div className="previous-page-button child child-left">
+                {/* <div className="previous-page-button child child-left">
                     <img className="chevron-left" src={chevronLeft} />
                     <Link to="/" className="previous-page-text">
                         돌아가기
                     </Link>
-                </div>
+                </div> */}
                 <div className="child child-center">
                     <img className="logo-white" src={logoWhite} />
                 </div>
