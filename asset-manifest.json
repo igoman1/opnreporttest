@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8f67bf3.css",
+    "main.js": "/static/js/main.ee02ca5d.js",
+    "static/js/787.54e61d9d.chunk.js": "/static/js/787.54e61d9d.chunk.js",
+    "static/media/Cover4.png": "/static/media/Cover4.76e86fde68d9bca33400.png",
+    "static/media/Cover1.png": "/static/media/Cover1.2168617a08b91d1260d7.png",
+    "static/media/Cover3.png": "/static/media/Cover3.a3249cfca69fdcb21b6e.png",
+    "static/media/Cover2.png": "/static/media/Cover2.49f89fcebdf19e2f6c66.png",
+    "static/media/Logo-colored.png": "/static/media/Logo-colored.322d1980f7ae80a94a4f.png",
+    "static/media/icon-안과.svg": "/static/media/icon-안과.27f2fc584cc4f8c54d9b.svg",
+    "static/media/icon-산부인과.svg": "/static/media/icon-산부인과.c0cbce98b2db0e735497.svg",
+    "static/media/icon-치과.svg": "/static/media/icon-치과.864c71c9a387b56178b5ef202539a457.svg",
+    "static/media/icon-정형외과.svg": "/static/media/icon-정형외과.0d6a6d79dc3515f62cce.svg",
+    "static/media/icon-피부과.svg": "/static/media/icon-피부과.f98141e826cf49f30daa.svg",
+    "static/media/icon-성형외과.svg": "/static/media/icon-성형외과.c90bc3071d42c873e03a.svg",
+    "static/media/icon-기타.svg": "/static/media/icon-기타.f8f46f2c81d44afadf2f.svg",
+    "static/media/icon-내과.svg": "/static/media/icon-내과.f8f46f2c81d44afadf2f.svg",
+    "static/media/icon-정신과.svg": "/static/media/icon-정신과.7494da61ee9e2d8c2c40.svg",
+    "static/media/Logo-white.png": "/static/media/Logo-white.de39720fe24ffb8b5ed0.png",
+    "static/media/pin_icon.svg": "/static/media/pin_icon.a6f0c239a9927ac621399cc8c3a0b35a.svg",
+    "static/media/carbon_report.svg": "/static/media/carbon_report.46965b9f02309f66f5504d64f89b5f50.svg",
+    "index.html": "/index.html",
+    "static/media/Chevron-left-blue.svg": "/static/media/Chevron-left-blue.a204dc6824fb9554dae41acb2b8f0b67.svg",
+    "static/media/Chevron-left.svg": "/static/media/Chevron-left.56dac2fc201e9e297c5923b026134973.svg",
+    "static/media/Chevron.svg": "/static/media/Chevron.7d7dc0429cbf0449cc68a9b85378902e.svg",
+    "main.a8f67bf3.css.map": "/static/css/main.a8f67bf3.css.map",
+    "main.ee02ca5d.js.map": "/static/js/main.ee02ca5d.js.map",
+    "787.54e61d9d.chunk.js.map": "/static/js/787.54e61d9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8f67bf3.css",
+    "static/js/main.ee02ca5d.js"
+  ]
+}
