@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
 import Home from "./pages/Home";
@@ -350,7 +350,8 @@ function App() {
 
     return (
         <>
-            <BrowserRouter>
+        <HashRouter>
+            {/* <BrowserRouter> */}
                 <Routes>
                     {/* <Route
                         path="/"
@@ -361,7 +362,8 @@ function App() {
                         element={<Result data={resultData} />}
                     />
                 </Routes>
-            </BrowserRouter>
+            {/* </BrowserRouter> */}
+            </HashRouter>
         </>
     );
 }
