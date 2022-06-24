@@ -9,7 +9,7 @@ const Intro = (props) => {
     const introData=props.input
     // console.log(introData)
     let dep=introData.department
-    // console.log(dep)
+    console.log(dep)
 
     let depIcon='기타'
     // switch(dep){
@@ -88,10 +88,12 @@ const Intro = (props) => {
     else{
         depIcon='기타'
     }
+    console.log(depIcon)
     // console.log(depIcon)
 
     const iconUrl = "icon/"+"icon-"+depIcon+".svg"
     // console.log(iconUrl)
+    console.log(iconUrl)
 
     return (
         <>

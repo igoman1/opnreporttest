@@ -10,7 +10,7 @@ import faker from "faker";
 
 const HospitalList = (props) => {
     const rawData = props.list
-    console.log(props.list)
+    // console.log(props.list)
     // const header = props.header
     // console.log(rawData)
     // console.log(header)
