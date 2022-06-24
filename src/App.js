@@ -350,8 +350,9 @@ function App() {
 
     return (
         <>
-        <HashRouter>
-            {/* <BrowserRouter> */}
+        {/* <HashRouter> */}
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
+                {/* <Navigation /> */}
                 <Routes>
                     {/* <Route
                         path="/"
@@ -362,8 +363,8 @@ function App() {
                         element={<Result data={resultData} />}
                     />
                 </Routes>
-            {/* </BrowserRouter> */}
-            </HashRouter>
+            </BrowserRouter>
+            {/* </HashRouter> */}
         </>
     );
 }
