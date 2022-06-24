@@ -3,8 +3,8 @@ import ProgressBar from "./ProgressBar";
 
 import "./CompBar.css";
 
-const CompBar = () => {
-  let fetchedScore = 0.2;
+const CompBar = (props) => {
+  let fetchedScore = props.value;
 
   let compIndex = 0;
   if (fetchedScore >= 0 && fetchedScore <= 0.05) {

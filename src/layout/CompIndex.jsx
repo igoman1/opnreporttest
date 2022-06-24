@@ -32,7 +32,8 @@ const CompIndex = (props) => {
             num={residualVal} />
             </div>
             <div className="comp-index-bottom">
-            <CompBar/>
+            <CompBar
+            value={sumVal}/>
             <CompBoxWhite
             name='경쟁 지표 (점유율 제곱합)'
             num={sumVal} />
