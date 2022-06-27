@@ -11,7 +11,7 @@ const Dictionary = (props) => {
                     <div className='dictionary-body-word'>매출액</div>
                     <div className='dictionary-body-meaning'>
                         <div>월간 카드 매출 합계를 의미합니다.</div>
-                        <div className='dictionary-body-explanation'>(심사평가원 제공 데이터 분석 기반 오픈닥터 추정에 따르면 {dictData.department}의 카드 매출은 보험급여가 포함된 실제 매출의 {dictData.sales_reflection}를 반영합니다)</div>
+                        <div className='dictionary-body-explanation'>(심사평가원 제공 데이터 분석 기반 오픈닥터 추정에 따르면 {dictData.department}의 카드 매출은<br></br> 보험급여가 포함된 실제 매출의 {dictData.sales_reflection}를 반영합니다)</div>
                     </div>
                 </div>
 
